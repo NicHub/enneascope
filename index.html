@@ -5,7 +5,7 @@
 		<title>Ennéascope</title>
 <style type="text/css" media="all">
 	body {
-		margin: 100px;
+		margin: 0;
 		font-family: Cochin, Georgia, Serif;
 		text-align: justify;
 		background-color: rgb( 241, 241, 241 );
@@ -13,7 +13,8 @@
 	#wrapper {
 		display: table;
 		width: 650px;
-		margin: 200px auto;
+		margin: 0 auto;
+		padding: 0;
 	}
 	.ccStyle {
 		margin: 1em auto;
@@ -39,6 +40,17 @@
 	}
 	h1 {
 		font-variant: small-caps;
+	}
+	div.img {
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+		padding: 0;
+		text-align: center;
+	}
+	img {
+		margin: 0 auto;
+		padding: 0;
 	}
 </style>
 <style type="text/css" media="print">
@@ -149,6 +161,10 @@ $( document ).ready( function()
 <div id="wrapper">
 
 <p id="debug"></p>
+
+<div class="img">
+<img src="enneagramme.svg" alt="ennéagramme" />
+</div>
 
 <h1 class="main_title">Ennéascope</h1>
 

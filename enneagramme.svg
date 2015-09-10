@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="9cm"
+	height="9cm"
+	viewBox="-1.9 -1.9 3.8 3.8"
+	preserveAspectRatio="xMidYMid slice">
+
+
+<!--
+
+À lire
+http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
+
+-->
+
+
+	<title>Ennéagramme</title>
+
+	<desc>L’ennéagramme – Dynamique de connaissance et d’évolution – Fabien et Patricia Chabreuil</desc>
+
+	<style type="text/css" media="all">
+
+		.hide          { display:none; }
+		.red           { stroke: red !important; }
+
+
+		.helper        { display:none; }
+		/*
+		#figure_1_disp { display:none; }
+		#figure_2_disp { display:none; }
+		#figure_3_disp { display:none; }
+		#figure_4_disp { display:none; }
+		#figure_5_disp { display:none; }
+		#figure_6_disp { display:none; }
+		#figure_7_disp { display:none; }
+		#figure_8_disp { display:none; }
+		#figure_9_disp { display:none; }
+		*/
+
+
+		circle, path {
+			/*vector-effect: non-scaling-stroke;*/ /* non-scaling-stroke is not understood the same in FF and Prince*/
+			stroke: black;
+			fill: none;
+			stroke-width: 0.01px;
+			stroke-linecap: round;
+			stroke-linejoin: round;
+			stroke-opacity: 1;
+			display: inline;
+		}
+
+		.dashed {
+			stroke: blue;
+			stroke-dasharray:0.5, 0.1, 0.05, 0.1;
+		}
+
+		.non-dashed {
+			stroke-dasharray: none;
+		}
+
+		.gras, .gras * {
+			stroke-width: 0.05px;
+		}
+
+		text {
+			font-size: 0.26px;
+			font-style: normal;
+			font-variant: normal;
+			font-weight: normal;
+			font-stretch: normal;
+			text-align: middle;
+			text-anchor: middle;
+			fill: black;
+			fill-opacity: 1;
+			stroke: none;
+			font-family: Cochin;
+			/*dominant-baseline: central; */ /* Works in Firefox only */
+		}
+
+		tspan.nb {
+			font-style: italic;
+			/*dominant-baseline: central; */ /* Works in Firefox only */
+		}
+
+		.helper * {
+			stroke: #BBB;
+			stroke-width: 0.5px;
+		}
+
+		@media print {
+
+			circle, path {
+				stroke-width: 0.012px;
+			}
+
+			.gras, .gras * {
+				stroke-width: 0.051px;
+			}
+
+			.helper * {
+				stroke-width: 0.001px;
+			}
+
+		}
+
+	</style>
+
+
+	<defs>
+
+		<!-- Rectangle du contour -->
+		<g id="rectangle"><rect x="-2.5" y="-2.5" width="5" height="5" style="fill:none; stroke:#DDD; stroke-width:0.1;fill-opacity:0.1;
+			stroke-opacity:0.9"/>
+		</g>
+
+
+		<!-- Utilisé comme base pour toutes les autres flèches -->
+		<g id="fleche"><path class="non-dashed" style="fill:black;stroke-miterlimit:4;" d="m 0,0  -0.18,-0.03  0,0.06 z" /></g>
+
+		<!-- Ensemble des neufs flèches -->
+		<g id="fleches">
+			<g id="fleches_3-6-9">
+				<g id="fleche_3-9" transform="translate(        0,-1        ) rotate(240)"><use xlink:href="#fleche"/></g>
+				<g id="fleche_6-3" transform="translate( 0.866025, 0.5      )            "><use xlink:href="#fleche"/></g>
+				<g id="fleche_9-3" transform="translate(-0.866025, 0.5      ) rotate(120)"><use xlink:href="#fleche"/></g>
+			</g>
+			<g id="fleches_1-2-4-5-7-8">
+				<g id="fleche_4-2" transform="translate( 0.984808,-0.173648 ) rotate(300)"><use xlink:href="#fleche"/></g>
+				<g id="fleche_1-4" transform="translate( 0.342020, 0.939693 ) rotate(100)"><use xlink:href="#fleche"/></g>
+				<g id="fleche_7-1" transform="translate( 0.642788,-0.766044 ) rotate(340)"><use xlink:href="#fleche"/></g>
+				<g id="fleche_5-7" transform="translate(-0.984808,-0.173648 ) rotate(240)"><use xlink:href="#fleche"/></g>
+				<g id="fleche_8-5" transform="translate(-0.342020, 0.939693 ) rotate( 80)"><use xlink:href="#fleche"/></g>
+				<g id="fleche_2-8" transform="translate(-0.642788,-0.766044 ) rotate(200)"><use xlink:href="#fleche"/></g>
+			</g>
+		</g>
+
+		<!-- Flèche en gras -->
+		<g id="fleche_gras" transform="scale(1.08) translate( -0.02,0 )" class="gras"><use xlink:href="#fleche"/></g>
+
+		<!-- Ensemble des neufs flèches en gras -->
+		<g id="fleches_gras">
+			<g id="fleches_3-6-9_gras">
+				<g id="fleche_3-9_gras" transform="translate(        0,-1        ) rotate(240)"><use xlink:href="#fleche_gras"/></g>
+				<g id="fleche_6-3_gras" transform="translate( 0.866025, 0.5      )            "><use xlink:href="#fleche_gras"/></g>
+				<g id="fleche_9-3_gras" transform="translate(-0.866025, 0.5      ) rotate(120)"><use xlink:href="#fleche_gras"/></g>
+			</g>
+			<g id="fleches_1-2-4-5-7-8_gras">
+				<g id="fleche_4-2_gras" transform="translate( 0.984808,-0.173648 ) rotate(300)"><use xlink:href="#fleche_gras"/></g>
+				<g id="fleche_1-4_gras" transform="translate( 0.342020, 0.939693 ) rotate(100)"><use xlink:href="#fleche_gras"/></g>
+				<g id="fleche_7-1_gras" transform="translate( 0.642788,-0.766044 ) rotate(340)"><use xlink:href="#fleche_gras"/></g>
+				<g id="fleche_5-7_gras" transform="translate(-0.984808,-0.173648 ) rotate(240)"><use xlink:href="#fleche_gras"/></g>
+				<g id="fleche_8-5_gras" transform="translate(-0.342020, 0.939693 ) rotate( 80)"><use xlink:href="#fleche_gras"/></g>
+				<g id="fleche_2-8_gras" transform="translate(-0.642788,-0.766044 ) rotate(200)"><use xlink:href="#fleche_gras"/></g>
+			</g>
+		</g>
+
+
+		<!-- Vecteur 2-8 gras -->
+		<g id="vecteur_2-8_gras">
+			<path class="gras" d="M  0.964808	-0.180927	-0.622788	-0.758765" />
+			<use xlink:href="#fleche_2-8_gras"/>
+		</g>
+
+		<!-- Vecteur 8-5 gras -->
+		<g id="vecteur_8-5_gras">
+			<path class="gras" d="M  -0.637788	-0.737688	-0.36202	0.826268" />
+			<use xlink:href="#fleche_8-5_gras"/>
+		</g>
+
+
+		<!-- Cercle -->
+		<g id="cercle"><circle cx="0" cy="0" r="1"/></g>
+
+		<!-- Aile 1-2 -->
+		<g id="aile_1-2"><path class="gras" d="M 0.984808,-0.173648  A 1 1   0 0 0    0.642788,-0.766044" /></g>
+
+		<!-- Aile 2-3 -->
+		<g id="aile_2-3" transform="rotate(  40 )"><use xlink:href="#aile_1-2"/></g>
+
+		<!-- Aile 3-4 -->
+		<g id="aile_3-4" transform="rotate(  80 )"><use xlink:href="#aile_1-2"/></g>
+
+		<!-- Aile 4-5 -->
+		<g id="aile_4-5" transform="rotate( 120 )"><use xlink:href="#aile_1-2"/></g>
+
+		<!-- Aile 5-6 -->
+		<g id="aile_5-6" transform="rotate( 160 )"><use xlink:href="#aile_1-2"/></g>
+
+		<!-- Aile 6-7 -->
+		<g id="aile_6-7" transform="rotate( 200 )"><use xlink:href="#aile_1-2"/></g>
+
+		<!-- Aile 7-8 -->
+		<g id="aile_7-8" transform="rotate( 240 )"><use xlink:href="#aile_1-2"/></g>
+
+		<!-- Aile 8-9 -->
+		<g id="aile_8-9" transform="rotate( 280 )"><use xlink:href="#aile_1-2"/></g>
+
+		<!-- Aile 9-1 -->
+		<g id="aile_9-1" transform="rotate( 320 )"><use xlink:href="#aile_1-2"/></g>
+
+
+		<!-- Centre -->
+		<g id="centre">
+			<g id="arc_centre"><path d="M 0.867763 -1.03416 A 1.35 1.35 0.1 0 0 -0.867763 -1.03416" /></g>
+			<g id="fleche_centre_gauche" transform="translate(-0.867763 -1.03416 ) rotate(144)"><use xlink:href="#fleche"/></g>
+			<g id="fleche_centre_droite" transform="translate( 0.867763 -1.03416 ) rotate(36)"><use xlink:href="#fleche"/></g>
+		</g>
+
+		<!-- Centre instinctif -->
+		<g id="centre_instinctif">
+			<g><use xlink:href="#centre"/></g>
+			<g><text transform="rotate(0) translate( 0 -1.45 )">Centre instinctif</text></g>
+		</g>
+
+		<!-- Centre mental -->
+		<g id="centre_mental">
+			<g transform="rotate(240)"><use xlink:href="#centre"/></g>
+			<g><text transform="rotate(60) translate( 0 1.55 )">Centre mental</text></g>
+
+		</g>
+
+		<!-- Centre émotionnel -->
+		<g id="centre_emotionnel">
+			<g transform="rotate(120)"><use xlink:href="#centre"/></g>
+			<g><text transform="rotate(300) translate( 0 1.55 )">Centre émotionnel </text></g>
+		</g>
+
+		<!-- Cercle helper -->
+		<g class="helper" id="cercle_nb_helper">
+			<g id="cercle_nb"><circle cx="0" cy="0" r="1.15"/></g>
+			<g id='cercle_nb_2'><circle cx='1.132529' cy='-0.199695' r='0.15'/></g>
+			<g id='cercle_nb_1'><circle cx='0.739206' cy='-0.880951' r='0.15'/></g>
+			<g id='cercle_nb_9'><circle cx='0' cy='-1.15' r='0.15'/></g>
+			<g id='cercle_nb_8'><circle cx='-0.739206' cy='-0.880951' r='0.15'/></g>
+			<g id='cercle_nb_7'><circle cx='-1.132529' cy='-0.199695' r='0.15'/></g>
+			<g id='cercle_nb_6'><circle cx='-0.995929' cy='0.575' r='0.15'/></g>
+			<g id='cercle_nb_5'><circle cx='-0.393323' cy='1.080647' r='0.15'/></g>
+			<g id='cercle_nb_4'><circle cx='0.393323' cy='1.080647' r='0.15'/></g>
+			<g id='cercle_nb_3'><circle cx='0.995929' cy='0.575' r='0.15'/></g>
+		</g>
+
+
+		<!-- Croix centrale -->
+		<g id="croix_centrale" class="helper">
+			<path d="M -0.1, 0    0.1, 0 z"/>
+			<path d="M  0,  -0.1  0,   0.1 z"/>
+			<circle cx="0" cy="0" r="0.05"/>
+		</g>
+
+		<!-- Triangle -->
+		<g id="triangle"><path d="M 0,-1 -0.866025,0.5 0.866025,0.5 z"/></g>
+
+		<!-- Triangle gras -->
+		<g id="triangle_gras" transform="scale( 0.98 )" class="gras"><path d="M 0,-1 -0.866025,0.5 0.866025,0.5 z"/></g>
+
+		<!-- Triangle 2-5-8 gras -->
+		<g id="triangle_2-5-8_gras" transform="rotate( -40 )"><use class="dashed" xlink:href="#triangle_gras"/></g>
+
+		<!-- Triangle 1-4-7 gras -->
+		<g id="triangle_1-4-7_gras" transform="rotate( 40 )"><use xlink:href="#triangle_gras"/></g>
+
+
+		<!-- Triangle 4-9-5 gras -->
+		<g id="triangle_4-9-5_gras" class="gras dashed"><path d="M 0.34202,0.939693  0,-1  -0.34202,0.939693"/></g>
+
+		<!-- Triangle 7-3-8 gras -->
+		<g id="triangle_7-3-8_gras" transform="rotate( 120 )"><use xlink:href="#triangle_4-9-5_gras"/></g>
+
+		<!-- Triangle 1-6-2 gras -->
+		<g id="triangle_1-6-2_gras" transform="rotate( -120 )"><use xlink:href="#triangle_4-9-5_gras"/></g>
+
+
+<!--
+1     0.642788,    -0.766044
+2     0.984808,    -0.173648
+3     0.866025,     0.5
+4     0.34202 ,     0.939693
+5    -0.34202 ,     0.939693
+6    -0.866025,     0.5
+7    -0.984808,    -0.173648
+8    -0.642788,    -0.766044
+9     0       ,    -1
+-->
+
+		<!-- Hexagone -->
+		<g id="hexagone"><path d="M 0.984808,-0.173648 0.34202,0.939693 0.642788,-0.766044 -0.984808,-0.173648 -0.34202,0.939693 -0.642788,-0.766044 z" /></g>
+
+		<!-- Hexagone sans 2-8 et 8-5-->
+		<g id="hexagone_sans_2-8_et_8-5"><path d="M  0.984808,-0.173648   0.34202,0.939693    0.642788,-0.766044     -0.984808,-0.173648    -0.34202,0.939693" /></g>
+
+		<!-- Hexagone sans 1-4 et 1-7-->
+		<g id="hexagone_sans_1-4_et_1-7"><path d="M  -0.984808,    -0.173648 -0.34202 ,     0.939693
+			-0.642788,    -0.766044 0.984808,    -0.173648 0.34202 ,     0.939693" /></g>
+
+
+		<!-- Chiffres ennéatypes -->
+		<g id="enneatypes">
+			<text transform="translate( 0, 0.06 )" x= '1.132529' y='-0.199695' id='nb_2'><tspan class='nb'>2</tspan></text>
+			<text transform="translate( 0, 0.06 )" x= '0.739206' y='-0.880951' id='nb_1'><tspan class='nb'>1</tspan></text>
+			<text transform="translate( 0, 0.06 )" x= '0'        y='-1.15'     id='nb_9'><tspan class='nb'>9</tspan></text>
+			<text transform="translate( 0, 0.06 )" x='-0.739206' y='-0.880951' id='nb_8'><tspan class='nb'>8</tspan></text>
+			<text transform="translate( 0, 0.06 )" x='-1.132529' y='-0.199695' id='nb_7'><tspan class='nb'>7</tspan></text>
+			<text transform="translate( 0, 0.06 )" x='-0.995929' y= '0.575'    id='nb_6'><tspan class='nb'>6</tspan></text>
+			<text transform="translate( 0, 0.06 )" x='-0.393323' y= '1.080647' id='nb_5'><tspan class='nb'>5</tspan></text>
+			<text transform="translate( 0, 0.06 )" x= '0.393323' y= '1.080647' id='nb_4'><tspan class='nb'>4</tspan></text>
+			<text transform="translate( 0, 0.06 )" x= '0.995929' y= '0.575'    id='nb_3'><tspan class='nb'>3</tspan></text>
+		</g>
+
+
+		<!-- Textes fierté -->
+		<g id="textes_fierte">
+			<text transform="translate( 0.55, 0.0 )" id='fierte_2'>
+				<tspan x= '1.132529' y='-0.199695'>J’aime</tspan>
+				<tspan x= '1.132529' dy="0.2">J’aide</tspan>
+			</text>
+			<text transform="translate( 1.0, 0.0 )" id='fierte_1'>
+				<tspan x= '0.739206' y='-0.880951'>Je suis droit</tspan>
+				<tspan x= '0.739206' dy="0.2">Je suis travailleur</tspan>
+			</text>
+			<text transform="translate( 0, -0.4 )" id='fierte_9'>
+				<tspan x= '0' y='-1.15'>Je suis bien, calme</tspan>
+				<tspan x= '0' dy="0.2">facile à vivre</tspan>
+			</text>
+			<text transform="translate( -0.7, -0.0 )" id='fierte_8'>
+				<tspan x= '-0.739206' y='-0.880951'>Je suis fort</tspan>
+				<tspan x= '-0.739206' dy="0.2">Je suis juste</tspan>
+			</text>
+
+			<text transform="translate( 0, 0.06 )" x='-1.132529' y='-0.199695' id='fierte_7'><tspan></tspan></text>
+			<text transform="translate( 0, 0.06 )" x='-0.995929' y= '0.575'    id='fierte_6'><tspan></tspan></text>
+			<text transform="translate( 0, 0.06 )" x='-0.393323' y= '1.080647' id='fierte_5'><tspan></tspan></text>
+			<text transform="translate( 0, 0.06 )" x= '0.393323' y= '1.080647' id='fierte_4'><tspan></tspan></text>
+			<text transform="translate( 0, 0.06 )" x= '0.995929' y= '0.575'    id='fierte_3'><tspan></tspan></text>
+		</g>
+
+
+		<!-- Figure 1 -->
+		<g id="figure_1">
+			<g><use xlink:href="#fleches"/></g>
+			<g><use xlink:href="#cercle"/></g>
+			<g><use xlink:href="#triangle"/></g>
+			<g><use xlink:href="#hexagone"/></g>
+			<g><use xlink:href="#enneatypes"/></g>
+		</g>
+
+
+		<!-- Figure 2 -->
+		<g id="figure_2">
+			<g><use xlink:href="#cercle"/></g>
+			<g><use xlink:href="#triangle"/></g>
+			<g><use xlink:href="#hexagone"/></g>
+			<g><use xlink:href="#enneatypes"/></g>
+		</g>
+
+
+		<!-- Figure 3 -->
+		<g id="figure_3">
+			<g><use xlink:href="#cercle"/></g>
+			<g><use xlink:href="#triangle_gras"/></g>
+			<g><use xlink:href="#hexagone"/></g>
+			<g><use xlink:href="#enneatypes"/></g>
+		</g>
+
+
+		<!-- Figure 4 -->
+		<g id="figure_4">
+			<g><use xlink:href='#figure_2'/></g>
+			<g><use xlink:href='#centre_instinctif'/></g>
+			<g><use xlink:href='#centre_mental'/></g>
+			<g><use xlink:href='#centre_emotionnel'/></g>
+		</g>
+
+
+		<!-- Figure 5 -->
+		<g id="figure_5">
+			<g><use xlink:href='#figure_2'/></g>
+			<g><use xlink:href='#textes_fierte'/></g>
+		</g>
+
+
+		<!-- Figure 6 -->
+		<g id="figure_6">
+			<text>Figure pas encore implémentée</text>
+		</g>
+
+
+		<!-- Figure 7 -->
+		<g id="figure_7">
+			<text>Figure pas encore implémentée</text>
+		</g>
+
+		<!-- Figure 8 -->
+		<g id="figure_8">
+			<text>Figure pas encore implémentée</text>
+		</g>
+
+
+		<!-- Figure 9 -->
+		<g id="figure_9">
+			<g><use xlink:href="#cercle"/></g>
+			<g><use xlink:href="#triangle"/></g>
+			<g><use xlink:href="#hexagone_sans_2-8_et_8-5"/></g>
+			<g><use xlink:href="#enneatypes"/></g>
+			<g><use xlink:href='#centre_instinctif'/></g>
+			<g><use xlink:href='#centre_mental'/></g>
+			<g><use xlink:href='#centre_emotionnel'/></g>
+			<g><use xlink:href='#triangle_2-5-8_gras'/></g>
+		</g>
+
+
+		<!-- Figure 10 -->
+		<g id="figure_10">
+			<g><use xlink:href="#cercle"/></g>
+			<g><use xlink:href="#triangle"/></g>
+			<g><use xlink:href="#hexagone_sans_1-4_et_1-7"/></g>
+			<g><use xlink:href="#enneatypes"/></g>
+			<g><use xlink:href='#centre_instinctif'/></g>
+			<g><use xlink:href='#centre_mental'/></g>
+			<g><use xlink:href='#centre_emotionnel'/></g>
+			<g><use xlink:href='#triangle_1-4-7_gras'/></g>
+		</g>
+
+		<!-- Figure 11 -->
+		<g id="figure_11">
+			<g><use xlink:href='#figure_2'/></g>
+			<g><use xlink:href='#centre_instinctif'/></g>
+			<g><use xlink:href='#aile_8-9'/></g>
+			<g><use xlink:href='#aile_9-1'/></g>
+			<g><use xlink:href='#triangle_4-9-5_gras'/></g>
+		</g>
+
+		<!-- Figure 12 -->
+		<g id="figure_12">
+			<g><use xlink:href='#figure_2'/></g>
+			<g><use xlink:href='#centre_emotionnel'/></g>
+			<g><use xlink:href='#aile_2-3'/></g>
+			<g><use xlink:href='#aile_3-4'/></g>
+			<g><use xlink:href='#triangle_7-3-8_gras'/></g>
+		</g>
+
+
+		<!-- Figure 13 -->
+		<g id="figure_13">
+			<g><use xlink:href='#figure_2'/></g>
+			<g><use xlink:href='#centre_mental'/></g>
+			<g><use xlink:href='#aile_5-6'/></g>
+			<g><use xlink:href='#aile_6-7'/></g>
+			<g><use xlink:href='#triangle_1-6-2_gras'/></g>
+		</g>
+
+
+		<!-- Figure 14 -->
+		<g id="figure_14">
+			<g><use xlink:href='#figure_2'/></g>
+			<g><use xlink:href='#vecteur_2-8_gras'/></g>
+			<g class="dashed"><use xlink:href='#vecteur_8-5_gras'/></g>
+		</g>
+
+
+
+
+
+		<g id="figure_ajeter">
+			<g><use xlink:href="#enneatypes"/></g>
+		</g>
+
+	</defs>
+
+
+	<g id="final_display">
+
+		<!-- Figures -->
+		<g id='figure_1_disp'><use xlink:href='#figure_1'/></g>
+		<g><use xlink:href='#centre_instinctif'/></g>
+		<g><use xlink:href='#centre_mental'/></g>
+		<g><use xlink:href='#centre_emotionnel'/></g>
+
+	</g>
+
+    <script type="text/javascript">
+    <![CDATA[
+
+		// ******
+		// Start
+		// ***
+        window.addEventListener( "load", main, false );
+
+
+		// ******
+		// Main
+		// ***
+		function main()
+        {
+        	$_GET = GET_param();
+			if( !isGETDefined( $_GET ) ){ return };
+        	displayFigures( $_GET );
+        }
+
+
+		// ******
+		// GET_param
+		// ***
+        function GET_param()
+        {
+            var $_GET = {};
+            var args = location.search.substr( 1 ).split( /&/ );
+
+            for( var i = 0; i < args.length; ++i )
+            {
+                var tmp = args[ i ].split( /=/ );
+                if( tmp[0] != "" )
+                {
+                    $_GET[ decodeURIComponent( tmp[ 0 ] ) ] = decodeURIComponent( tmp.slice( 1 ).join( "" ).replace( "+", " " ) );
+                }
+            }
+
+			if( !isGETDefined( $_GET ) ){ return };
+
+			$_GET[ 'show' ] = $_GET[ 'show' ].split( /,/ );
+			var nbGET = $_GET[ 'show' ].length;
+            for( var i = 0; i < nbGET; ++i )
+            {
+                $_GET[ 'show' ][ i ] = parseInt( $_GET[ 'show' ][ i ] );
+            }
+            console.log( "$_GET[ 'show' ] = ", $_GET[ 'show' ] );
+            console.log( "nbGET = ", nbGET );
+
+            return( $_GET );
+        }
+
+
+		// ******
+		// displayFigures
+		// ***
+        function displayFigures( $_GET )
+        {
+
+			var fig = document.getElementById( 'final_display' ).childNodes;
+			for( var i = 0; i < fig.length; i++ )
+            {
+            	try
+            	{
+	            	fig[ i ].style.display = 'none';
+            	}
+            	catch( err ){ }
+            }
+
+			var nbGET = $_GET[ 'show' ].length;
+            for( var i = 0; i < nbGET; i++ )
+            {
+	            document.getElementById( 'figure_' + $_GET[ 'show' ][ i ] + '_disp' ).style.display = 'inline';
+            }
+        }
+
+
+		// ******
+		// isGETDefined
+		// ***
+        function isGETDefined( $_GET )
+        {
+            try
+            {
+                var nbGET = $_GET[ 'show' ].length;
+            }
+            catch( err )
+            {
+                console.log( "No GET parameters - exit" );
+                return( false );
+            }
+			return( true );
+		}
+    ]]>
+    </script>
+
+</svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
