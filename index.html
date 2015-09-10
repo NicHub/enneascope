@@ -1,25 +1,27 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-
 		<meta http-equiv="content-type" content="text/html; charset=utf-p8" />
 		<title>Enneascope</title>
-
 <style type="text/css" media="all">
-
 	body {
 		margin: 100px;
 		font-family: Cochin, Georgia, Serif;
 		text-align: justify;
 		background-color: rgb( 241, 241, 241 );
 	}
-
 	#wrapper {
-		display: box;
+		display: table;
 		width: 650px;
 		margin: 200px auto;
 	}
-
+	.ccStyle {
+		margin: 1em auto;
+		width: 650px;
+		border: 1px solid;
+		text-align:center;
+		padding: 1em;
+	}
 	.ccStyle label {
 		padding: 0.25em 1em 0.25em 0.5em;
 	}
@@ -38,14 +40,17 @@
 	h1 {
 		font-variant: small-caps;
 	}
-	.ccStyle {
-		margin: 1em auto;
+</style>
+<style type="text/css" media="print">
+	#wrapper {
+		display: table;
 		width: 100%;
-		border: 1px solid;
-		text-align:center;
-		padding: 1em;
+		margin: 0;
 	}
-
+	.ccStyle {
+		display: table-cell;
+		width: 100%;
+	}
 </style>
 
 <script type="text/javascript" src="./lib/jquery-1.8.2.min.js"> </script>
