@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-p8" />
-		<title>Enneascope</title>
+		<title>Ennéascope</title>
 <style type="text/css" media="all">
 	body {
 		margin: 100px;
@@ -42,14 +42,28 @@
 	}
 </style>
 <style type="text/css" media="print">
-	#wrapper {
-		display: table;
-		width: 100%;
-		margin: 0;
+	@page {
+		size: A4;
+		margin: 2cm;
+		padding: 0;
 	}
-	.ccStyle {
-		display: table-cell;
-		width: 100%;
+	body {
+		background-color: white;
+		margin: 0;
+		padding: 0;
+	}
+	#wrapper {
+		display: block;
+		width: 15cm;
+		margin: 0 auto;
+		padding: 0;
+	}
+	.ccDiv, .ccStyle {
+		display: block;
+		width: 15cm;
+		height: 1cm;
+		margin: 0;
+		padding: 0;
 	}
 </style>
 
@@ -130,20 +144,15 @@ $( document ).ready( function()
 </script>
 
 
-	</head>
-	<body>
-		<div id="wrapper">
-			<div id="content">
-
+</head>
+<body>
+<div id="wrapper">
 
 <p id="debug"></p>
 
-
 <h1 class="main_title">Ennéascope</h1>
 
-
-				<div class="ccDiv">
-
+<div class="ccDiv">
 <form class="ccStyle">
 	<input type="checkbox" id="cStyle1" name="cStyle" value="0" /><label for="cStyle1"><span class="style_nb">1</span></label>
 	<input type="checkbox" id="cStyle2" name="cStyle" value="1" /><label for="cStyle2"><span class="style_nb">2</span></label>
@@ -155,327 +164,326 @@ $( document ).ready( function()
 	<input type="checkbox" id="cStyle8" name="cStyle" value="7" /><label for="cStyle8"><span class="style_nb">8</span></label>
 	<input type="checkbox" id="cStyle9" name="cStyle" value="8" /><label for="cStyle9"><span class="style_nb">9</span></label>
 </form>
-				</div>
+</div>
 
 
 
-				<div class="profil p1 p0">
-					<h1>Profil <span class="style_nb">1</span> – Profil <span class="style_nb">1</span></h1>
-					<h2>Pourquoi on ne peut pas les confondre&#160;?</h2>
-					<p>Parce que c’est le même profil&#160;!</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Rien ne les distingue&#160;!</p>
-				</div>
-				<div class="profil p1 p2">
-					<h1>Profil <span class="style_nb">1</span> – Profil <span class="style_nb">2</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Aidant les autres, aimant donner des conseils. Essayant de faire au mieux et ayant tendance à se faire du souci. Réticent à dire ce qu’il veut ou a besoin.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">1</span> est soucieux de faire de la bonne façon, le <span class="style_nb">2</span> d’établir de bonnes relations avec les autres. Le <span class="style_nb">1</span> a tendance a garder ses sentiments pour lui, le <span class="style_nb">2</span> à les montrer. Le <span class="style_nb">1</span> pose des frontières claires et est sceptique, les frontières du <span class="style_nb">2</span> sont souvent floues et il fait confiance.</p>
-				</div>
-				<div class="profil p1 p3">
-					<h1>Profil <span class="style_nb">1</span> – Profil <span class="style_nb">3</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>De grandes attentes vis à vis de soi comme des autres. Des difficultés à déléguer. Travaillant dur, actif, efficace et visant à conclure.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le discours du <span class="style_nb">1</span> est parfois moraliste, celui du <span class="style_nb">3</span> peut être chargé de vantardise. Le <span class="style_nb">1</span> accomplit en général une tâche après l’autre, le <span class="style_nb">3</span> en a plusieurs sur le feu en même temps. Le <span class="style_nb">1</span> fait les choses méthodiquement, avec pragmatisme, le <span class="style_nb">3</span> est plus charmeur et peut changer sa cible pour s’adapter à la situation ou aux attentes des autres. Le <span class="style_nb">1</span> est pessimiste et s’inquiète des erreurs du passé et du futur, le <span class="style_nb">3</span> est optimiste et se focalise sur ses succès.</p>
-				</div>
-				<div class="profil p1 p4">
-					<h1>Profil <span class="style_nb">1</span> – Profil <span class="style_nb">4</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Idéaliste et insatisfait des choses telles qu’elles sont. Des idéaux élevés pour lui-même.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">1</span> contrôle ses émotions, le <span class="style_nb">4</span> affiche sa tristesse. Le <span class="style_nb">1</span> voit les sentiments forts comme dangereux ou inadéquats, le <span class="style_nb">4</span> valorise les sentiments profonds. Le <span class="style_nb">1</span> suit les règles de la société, le <span class="style_nb">4</span> suit ses propres règles. Le <span class="style_nb">1</span> est réaliste, concret, terre-à-terre, le <span class="style_nb">4</span> est créatif et plein de fantaisie.</p>
-				</div>
-				<div class="profil p1 p5">
-					<h1>Profil <span class="style_nb">1</span> – Profil <span class="style_nb">5</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Logique, objectif, contrôlant ses émotions. Des idéaux élevés. Souci de ne pas faire d’erreurs. Indépendant et ne comptant que sur lui.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">1</span> est terre-à-terre et vise des améliorations concrètes, le <span class="style_nb">5</span> est dans l’abstraction et la théorie. Le <span class="style_nb">1</span> suit les règles, le <span class="style_nb">5</span> n’aime pas les conventions ni l’autoritarisme. Le <span class="style_nb">1</span> s’implique et est actif, le <span class="style_nb">5</span> se tient en retrait et observe. Le <span class="style_nb">1</span> cherche à réduire le nombre d’options et à prendre des décisions, le <span class="style_nb">5</span> cherche à recueillir de l’information.</p>
-				</div>
-				<div class="profil p1 p6">
-					<h1>Profil <span class="style_nb">1</span> – Profil <span class="style_nb">6</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Fort sens du devoir et de l’engagement. Sceptique au départ, la confiance s’établit lentement. Souvent inquiet et pessimiste. A tendance à travailler trop et a du mal à se relaxer. Aime les procédures clairement définies.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">1</span>, instinctif, est bien ancré, le <span class="style_nb">6</span> est anxieux par nature. Le <span class="style_nb">1</span> réprime sa colère, le <span class="style_nb">6</span> la montre s’il est contrephobique. Le comportement du <span class="style_nb">1</span> est prévisible, celui du <span class="style_nb">6</span> imprévisible. Le souci du <span class="style_nb">1</span> est d’avoir raison, celui du <span class="style_nb">6</span> est d’être en sécurité. Le <span class="style_nb">1</span> se décide rapidement, le <span class="style_nb">6</span> a du mal à se décider.</p>
-				</div>
-				<div class="profil p1 p7">
-					<h1>Profil <span class="style_nb">1</span> – Profil <span class="style_nb">7</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Les deux types se trouvent de part et d’autre d’une flèche&#160;: le <span class="style_nb">1</span> s’intègre en <span class="style_nb">7</span>, le <span class="style_nb">7</span> se désintègre en <span class="style_nb">1</span>.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">1</span> évite à tout prix la colère et contrôle ses émotions, le <span class="style_nb">7</span> apparaît souvent exubérant dans son mode d’expression. Le <span class="style_nb">1</span> peut souffrir pour son idéal, le <span class="style_nb">7</span> évite à tout prix la souffrance.</p>
-				</div>
-				<div class="profil p1 p8">
-					<h1>Profil <span class="style_nb">1</span> – Profil <span class="style_nb">8</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Travaillant dur, ambitieux, centré sur l’objectif. Confiant en soi et direct. Indépendant. Parfois impatient, polémique et insensible aux sentiments des autres. Prenant des responsabilités et poussant les autres à faire de même. Tendance à voir les choses en noir et blanc.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">1</span> est souvent modéré et courtois, le <span class="style_nb">8</span> peut être excessif et grossier. Le <span class="style_nb">1</span> essaye d’être raisonnable, le <span class="style_nb">8</span> aime parfois choquer et se moque de ce qu’on pense de lui. Le <span class="style_nb">1</span> est méthodique, le <span class="style_nb">8</span> est spontané. La colère du <span class="style_nb">1</span> s’accumule jusqu’à ce qu’il explose, le <span class="style_nb">8</span> l’exprime dans l’instant. Le <span class="style_nb">1</span> met les autres sous pression pour qu’ils changent, le <span class="style_nb">8</span> intimide les autres pour parvenir à ce résultat. Le <span class="style_nb">1</span> suit les règles, le <span class="style_nb">8</span> y déroge si elles le dérange, même s’il en est l’auteur.</p>
-				</div>
-				<div class="profil p1 p9">
-					<h1>Profil <span class="style_nb">1</span> – Profil <span class="style_nb">9</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Franchement, ça semble assez difficile...</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">1</span> est toujours en mouvement, le <span class="style_nb">9</span> agit en général dans le calme.</p>
-				</div>
-				<div class="profil p2 p0">
-					<h1>Profil <span class="style_nb">2</span> – Profil <span class="style_nb">2</span></h1>
-					<h2>Pourquoi on ne peut pas les confondre&#160;?</h2>
-					<p>Parce que c’est le même profil&#160;!</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Rien ne les distingue&#160;!</p>
-				</div>
-				<div class="profil p2 p3">
-					<h1>Profil <span class="style_nb">2</span> – Profil <span class="style_nb">3</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Amical, sociable, enthousiaste. Soigne son image. Aime l’approbation, la reconnaissance, l’admiration. Peut cacher sa vulnérabilité derrière une façade de confiance en soi. Des difficultés à exprimer des sentiments négatifs.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">2</span> veut être apprécié pour sa générosité, le <span class="style_nb">3</span> pour ses réalisations et succès. Le <span class="style_nb">2</span> se sent exister par ses relations aux autres, le <span class="style_nb">3</span> par son travail. Le <span class="style_nb">2</span> peut parfois présenter des manifestations émotionnelles débordantes et être dramatique, le <span class="style_nb">3</span> est relativement dans la retenue émotionnelle. Le <span class="style_nb">2</span> aime parler de ses sentiments, le <span class="style_nb">3</span> aime parler de ses objectifs. Le <span class="style_nb">2</span> aime souvent aller au bout de ses sentiments, le <span class="style_nb">3</span> évite les sentiments forts.</p>
-				</div>
-				<div class="profil p2 p4">
-					<h1>Profil <span class="style_nb">2</span> – Profil <span class="style_nb">4</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>La relation à l’autre a une grande importance. Grande sensibilité au rejet. Peut être dramatique, possessif, jaloux. Souvent de la culpabilité.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">2</span> se concentre sur l’autre, le <span class="style_nb">4</span> se centre sur lui-même. Le <span class="style_nb">2</span> tente de cacher sa tristesse, le <span class="style_nb">4</span> l’exhibe. Le <span class="style_nb">2</span> a tendance à vouloir entrer en contact, le <span class="style_nb">4</span> est souvent en retrait. Le <span class="style_nb">2</span> s’exprime en donnant aux autres, le <span class="style_nb">4</span> en communiquant ses sentiments.</p>
-				</div>
-				<div class="profil p2 p5">
-					<h1>Profil <span class="style_nb">2</span> – Profil <span class="style_nb">5</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Parce que ça nous parait assez difficile...</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">5</span> ne s’implique pas dans les relations, le <span class="style_nb">2</span> est très impliqué dans les relations.</p>
-				</div>
-				<div class="profil p2 p6">
-					<h1>Profil <span class="style_nb">2</span> – Profil <span class="style_nb">6</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Amical et montrant de la compassion. Donnant de l’aide et des conseils. Sensible à la critique. Veut être aimé et peut se subordonner à l’autre. Peur de l’abandon.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">2</span> veut par-dessus tout qu’on l’aime, le <span class="style_nb">6</span> veut par-dessus tout qu’on le protège. Le <span class="style_nb">2</span> est flatteur, le <span class="style_nb">6</span> est soupçonneux face à la flatterie (bien qu’il puisse parfois l’utiliser). Le <span class="style_nb">2</span> a besoin de sentir que sa décision est la bonne, le <span class="style_nb">6</span> a besoin de l’avoir analysé. Le <span class="style_nb">2</span> se centre sur le positif, le <span class="style_nb">6</span> imagine le pire. Le <span class="style_nb">2</span> fait facilement confiance, le <span class="style_nb">6</span> teste avant d’accorder sa confiance.</p>
-				</div>
-				<div class="profil p2 p7">
-					<h1>Profil <span class="style_nb">2</span> – Profil <span class="style_nb">7</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Enthousiasme, optimisme et idéalisme. Aimant motiver les autres. Charmeur et séducteur. Spontané.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">2</span> se centre sur la vie de l’autre, le <span class="style_nb">7</span> sur ses propres projets. Le <span class="style_nb">2</span> veut que les gens se sentent à l’aise pour lui raconter leurs problèmes, le<span class="style_nb">7</span> est mal à l’aise d’écouter les problèmes des autres. Le <span class="style_nb">2</span> veut se rendre indispensable, le <span class="style_nb">7</span> ne veut pas qu’on dépende de lui. Le <span class="style_nb">2</span> essaye d’avoir du tact, le <span class="style_nb">7</span> peut être relativement « sans gants ». Le <span class="style_nb">2</span> abandonne son centre d’intérêt au profit de la relation, le <span class="style_nb">7</span> reste attentif à son propre intérêt.</p>
-				</div>
-				<div class="profil p2 p8">
-					<h1>Profil <span class="style_nb">2</span> – Profil <span class="style_nb">8</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Les <span class="style_nb">2</span> types se trouvent de part et d’autre d’une flèche&#160;: le <span class="style_nb">8</span> s’intègre en <span class="style_nb">2</span>, le <span class="style_nb">2</span> se désintègre en <span class="style_nb">8</span>.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">2</span> obtient ce qu’il désire par la séduction et la manipulation, le <span class="style_nb">8</span> par l’intimidation.</p>
-				</div>
-				<div class="profil p2 p9">
-					<h1>Profil <span class="style_nb">2</span> – Profil <span class="style_nb">9</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Empathie, générosité. Difficultés à s’imposer et à exprimer de la colère. Dépend de l’autre pour se sentir bien. Est accommodant avec son partenaire.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">2</span> peut être dramatique, le <span class="style_nb">9</span> reste relativement réservé et calme. Le <span class="style_nb">2</span> fait connaître ses sentiments relativement facilement, le <span class="style_nb">9</span> garde ses sentiments pour lui. Le <span class="style_nb">2</span> se préoccupe souvent d’une personne à la fois, le <span class="style_nb">9</span> fusionne avec ce que la situation demande&#160;: personne ou groupe. Le <span class="style_nb">2</span> a confiance en lui et se préoccupe de son image, le <span class="style_nb">9</span> semble modeste et sans prétention.</p>
-				</div>
-				<div class="profil p3 p0">
-					<h1>Profil <span class="style_nb">3</span> – Profil <span class="style_nb">3</span></h1>
-					<h2>Pourquoi on ne peut pas les confondre&#160;?</h2>
-					<p>Parce que c’est le même profil&#160;!</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Rien ne les distingue&#160;!</p>
-				</div>
-				<div class="profil p3 p4">
-					<h1>Profil <span class="style_nb">3</span> – Profil <span class="style_nb">4</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Il ne se ressemblent pas beaucoup...</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">3</span> est dans le « faire », le <span class="style_nb">4</span> est dans l’émotion.</p>
-				</div>
-				<div class="profil p3 p5">
-					<h1>Profil <span class="style_nb">3</span> – Profil <span class="style_nb">5</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Le <span class="style_nb">3</span> se prend parfois pour un <span class="style_nb">5</span>, car il manque d’accès à son moi profond et ressent un vide intérieur fort.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Il est en général le seul à faire la confusion&#160;!</p>
-				</div>
-				<div class="profil p3 p6">
-					<h1>Profil <span class="style_nb">3</span> – Profil <span class="style_nb">6</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Responsable et plein d’énergie. Ayant de grandes attentes pour lui et les autres. Objectif, opiniâtre et aimant contrôler la situation. Souvent surmené et ayant du mal à relâcher la pression.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">3</span> se centre sur ses objectifs personnels, le <span class="style_nb">6</span> sur leur devoir envers un groupe ou une cause. Le <span class="style_nb">3</span> est confiant est optimiste, le <span class="style_nb">6</span> est anxieux et pessimiste. Le <span class="style_nb">3</span> s’intéresse plus à ce qui peut être fait qu’à ce qui ne va pas, le <span class="style_nb">6</span> s’attarde sur les erreurs et prévoit le désastre. Le <span class="style_nb">3</span> expédie les choses à faire, le <span class="style_nb">6</span> tergiverse et hésite. Le <span class="style_nb">3</span> peu avoir du mal à travailler en équipe si cela nuit à son efficacité, le <span class="style_nb">6</span> prend plaisir à participer à un travail de groupe. Le <span class="style_nb">3</span> évite souvent la confrontation directe, le <span class="style_nb">6</span> y fonce s’il est contrephobique.</p>
-				</div>
-				<div class="profil p3 p7">
-					<h1>Profil <span class="style_nb">3</span> – Profil <span class="style_nb">7</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Actif, optimiste et aimant aller vite. Amical et parfois superficiel. Charmeur, à la recherche de l’admiration et de l’attention. Mal à l’aise avec des gens malheureux ou déprimés. Tendance à se rétirer si la relation devient trop intime. Aimant relever des défis.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">3</span> a toujours de nouveaux objectifs pour travailler, le <span class="style_nb">7</span> fait toujours des plans pour de nouvelles aventures. Le <span class="style_nb">3</span> est parfois un peu réservé, le <span class="style_nb">7</span> n’a pas d’inhibition et est impulsif. Le <span class="style_nb">3</span> est conformiste, le <span class="style_nb">7</span> en dehors des conventions et refusant l’autoritarisme. Le <span class="style_nb">3</span> peut avoir plusieurs projets à la fois et chercher à tous les réaliser, le <span class="style_nb">7</span> a aussi plusieurs projets mais peut en laisser certains inachevés.</p>
-				</div>
-				<div class="profil p3 p8">
-					<h1>Profil <span class="style_nb">3</span> – Profil <span class="style_nb">8</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Beaucoup d’énergie et d’enthousiasme. Ambitieux et parfois fou de travail. Aimant prendre des responsabilités et le leadership, en motivant les autres. Autonome. Tendance à cacher ses faiblesses.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">3</span> cherche à être admiré, le <span class="style_nb">8</span> cherche à être respecté. Le <span class="style_nb">3</span> est assez conformiste, le <span class="style_nb">8</span> est fier d’être individualiste et non conformiste. Le <span class="style_nb">3</span> a une certaine réserve, le <span class="style_nb">8</span> est bruyant, exubérant. Le <span class="style_nb">3</span> use de diplomatie pour éviter le conflit, le <span class="style_nb">8</span> n’a pas peur de choquer et d’aller à l’affrontement. Le <span class="style_nb">3</span> peut manipuler les autres pour les faire travailler plus, le <span class="style_nb">8</span> se moque d’avoir une image de gentil.</p>
-				</div>
-				<div class="profil p3 p9">
-					<h1>Profil <span class="style_nb">3</span> – Profil <span class="style_nb">9</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Les deux types se trouvent de part et d’autre d’une flèche&#160;: le <span class="style_nb">9</span> s’intègre en <span class="style_nb">3</span>, le <span class="style_nb">3</span> se désintègre en <span class="style_nb">9</span>.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">3</span> est centré sur son objectif, le <span class="style_nb">9</span> ne sait pas trop ce qu’il veut faire.</p>
-				</div>
-				<div class="profil p4 p0">
-					<h1>Profil <span class="style_nb">4</span> – Profil <span class="style_nb">4</span></h1>
-					<h2>Pourquoi on ne peut pas les confondre&#160;?</h2>
-					<p>Parce que c’est le même profil&#160;!</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Rien ne les distingue&#160;!</p>
-				</div>
-				<div class="profil p4 p5">
-					<h1>Profil <span class="style_nb">4</span> – Profil <span class="style_nb">5</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Original et créatif. Tendance à être non conventionnel ou même excentrique. Très sensible à la critique. A l’écart et parfois solitaire, mal à l’aise en société.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">4</span> est dans l’émotion et l’humeur du moment, le <span class="style_nb">5</span> est calme et objectif. Le <span class="style_nb">4</span> cherche à faire monter l’intensité émotionnelle dans une relation, le <span class="style_nb">5</span> cherche une relation stable et sans remous. Le <span class="style_nb">4</span> veut exprimer ses sentiments et être compris, le <span class="style_nb">5</span> est mal à l’aise pour exprimer ses sentiments et les garde pour lui. Le <span class="style_nb">4</span> s’implique avec les autres, le <span class="style_nb">5</span> reste à distance, même dans l’intimité.</p>
-				</div>
-				<div class="profil p4 p6">
-					<h1>Profil <span class="style_nb">4</span> – Profil <span class="style_nb">6</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Chaleureux et dans la compassion. Analysant et remettant en cause ses motivations et sentiments, ainsi que ceux des autres. Peur de l’abandon. Très sensible, se sentant facilement incompris, sujet au sentiment de honte ou de culpabilité.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">4</span> cherche à créer des relations intenses, le <span class="style_nb">6</span> des relations sécurisantes. Le <span class="style_nb">4</span> fait confiance à ses sentiments, le <span class="style_nb">6</span> raisonne pour vérifier ses impressions. Le <span class="style_nb">4</span> a souvent une voix calme et parfois triste, le <span class="style_nb">6</span> a souvent une voix dans laquelle la nervosité résonne. Le <span class="style_nb">4</span> est enclin à la dépression, le <span class="style_nb">6</span> est enclin à l’anxiété.</p>
-				</div>
-				<div class="profil p4 p7">
-					<h1>Profil <span class="style_nb">4</span> – Profil <span class="style_nb">7</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Imaginatif et expressif. Oscillant entre le plaisir d’être engagé et la volonté d’indépendance. Cherchant l’intensité, non conformiste, idéaliste. Goût de la démesure. Tendance à fantasmer une relation amoureuse idéale.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">4</span> souhaite être en connexion émotionnelle à l’autre, le <span class="style_nb">7</span> préférera souvent parler de ses aventures. Le <span class="style_nb">4</span> peut se complaire dans les idées noires, la souffrance et la peine, le <span class="style_nb">7</span> cherche la nouveauté et le bonheur et évite ce qui est désagréable. Le <span class="style_nb">4</span> est dur envers lui-même, le <span class="style_nb">7</span> s’aime bien. Le <span class="style_nb">4</span> est souvent mal à l’aise en groupe, le <span class="style_nb">7</span> y est à l’aise. Le <span class="style_nb">4</span> se rappelle avoir eu une enfance triste ou difficile, le <span class="style_nb">7</span> se rappelle avoir eu une enfance heureuse.</p>
-				</div>
-				<div class="profil p4 p8">
-					<h1>Profil <span class="style_nb">4</span> – Profil <span class="style_nb">8</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>La confusion nous semble difficile...</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">8</span> ne montre pas d’états d’âme, le <span class="style_nb">4</span> en affiche tout le temps.</p>
-				</div>
-				<div class="profil p4 p9">
-					<h1>Profil <span class="style_nb">4</span> – Profil <span class="style_nb">9</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Chaleureux et dans la compassion. Évitant le conflit et la confrontation. Sensible à la critique. Têtu et résistant. Parfois des difficultés à prendre des décisions.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">4</span> est théâtral, le <span class="style_nb">9</span> est calme. Le <span class="style_nb">4</span> à souvent un style décalé, le <span class="style_nb">9</span> est plutôt conventionnel à ce niveau. Le <span class="style_nb">4</span> voudrait que les choses soient différentes de ce qu’elles sont, le <span class="style_nb">9</span> accepte le monde tel qu’il est. Le <span class="style_nb">4</span> accuse et provoque si on l’ignore, le <span class="style_nb">9</span> se retire et s’oublie dans une autre occupation. Le <span class="style_nb">4</span> tient à sa mélancolie, le <span class="style_nb">9</span> à tendance à réprouver ce sentiment.</p>
-				</div>
-				<div class="profil p5 p0">
-					<h1>Profil <span class="style_nb">5</span> – Profil <span class="style_nb">5</span></h1>
-					<h2>Pourquoi on ne peut pas les confondre&#160;?</h2>
-					<p>Parce que c’est le même profil&#160;!</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Rien ne les distingue&#160;!</p>
-				</div>
-				<div class="profil p5 p6">
-					<h1>Profil <span class="style_nb">5</span> – Profil <span class="style_nb">6</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Compétent et instruit. Ayant un bon sens de l’humour. Jouant souvent l’avocat du diable. Peut se révéler arrogant, cynique, polémique, rebelle. Peut être paranoïaque et négatif.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">5</span> parle doucement, est reservé et en retrait, le <span class="style_nb">6</span> est plus souvent sociable et avenant. Le <span class="style_nb">5</span> se comporte de manière égale, le comportement du <span class="style_nb">6</span> oscille d’un extrême à l’autre. Le <span class="style_nb">5</span> semble souvent calme, le <span class="style_nb">6</span> nerveux. Le <span class="style_nb">5</span> donne une image de détachement émotionnel, le <span class="style_nb">6</span> a des réactions fortes et intenses (surtout le contrephobique).</p>
-				</div>
-				<div class="profil p5 p7">
-					<h1>Profil <span class="style_nb">5</span> – Profil <span class="style_nb">7</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Les deux types se trouvent de part et d’autre d’une flèche&#160;: le <span class="style_nb">7</span> s’intègre en <span class="style_nb">5</span>, le <span class="style_nb">5</span> se désintègre en <span class="style_nb">7</span>.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">5</span> aime la profondeur, le <span class="style_nb">7</span> aime l’étendue.</p>
-				</div>
-				<div class="profil p5 p8">
-					<h1>Profil <span class="style_nb">5</span> – Profil <span class="style_nb">8</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Les deux types se trouvent de part et d’autre d’une flèche&#160;: le <span class="style_nb">5</span> s’intègre en <span class="style_nb">8</span>, le <span class="style_nb">8</span> se désintègre en <span class="style_nb">5</span>.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">5</span> est en retrait et observe, le <span class="style_nb">8</span> s’implique et agit.</p>
-				</div>
-				<div class="profil p5 p9">
-					<h1>Profil <span class="style_nb">5</span> – Profil <span class="style_nb">9</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Évitant le conflit et les situations difficiles. Curieux de récolter des informations. Parle doucement. Passif-agressif.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">5</span> est à l’écart des autres, le <span class="style_nb">9</span> fusionne avec les autres. Le <span class="style_nb">5</span> est méfiant et cynique, le <span class="style_nb">9</span> crédule et optimiste. Le <span class="style_nb">5</span> se fatigue s’il est trop longtemps avec les autres et doit s’isoler, le <span class="style_nb">9</span> peut rester longtemps avec un groupe. Le discours du <span class="style_nb">5</span> est succinct, celui du <span class="style_nb">9</span> est sans fin. Le <span class="style_nb">5</span> est concentré, le <span class="style_nb">9</span> est distrait facilement.</p>
-				</div>
-				<div class="profil p6 p0">
-					<h1>Profil <span class="style_nb">6</span> – Profil <span class="style_nb">6</span></h1>
-					<h2>Pourquoi on ne peut pas les confondre&#160;?</h2>
-					<p>Parce que c’est le même profil&#160;!</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Rien ne les distingue&#160;!</p>
-				</div>
-				<div class="profil p6 p7">
-					<h1>Profil <span class="style_nb">6</span> – Profil <span class="style_nb">7</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Avenant, sociable, avec un bon sens de l’humour. Impulsif et nerveux.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">6</span> aime la sécurité de l’engagement, le <span class="style_nb">7</span> garde des options ouvertes et évite de s’engager. Le <span class="style_nb">6</span> aime les choses prévisibles, le <span class="style_nb">7</span> aime la nouveauté et les surprises agréables. Le <span class="style_nb">6</span> contrôle son comportement, le <span class="style_nb">7</span> se laisse aller. Le <span class="style_nb">6</span> analyse les motivations des autres avec méfiance, le <span class="style_nb">7</span> espère juste que l’autre voudra partager son aventure.</p>
-				</div>
-				<div class="profil p6 p8">
-					<h1>Profil <span class="style_nb">6</span> – Profil <span class="style_nb">8</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>La confusion est possible avec le <span class="style_nb">6</span> contrephobique Épris de justice et de vérité, défendant le faible. Loyal et protecteur. Intimidation, violence, hostilité. Manque de confiance envers les autres. Le monde est dangereux. Contre l’autoritarisme et le conformisme.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">6</span> peut céder sous le pression, le <span class="style_nb">8</span> tente d’intimider sous la pression. Le <span class="style_nb">6</span> attaque mais prend des mesures pour se protéger, le <span class="style_nb">8</span> va de l’avant. Le <span class="style_nb">6</span> peut donner de longues explications ou se répéter pour s’assurer qu’il a été compris, le <span class="style_nb">8</span> va droit au but. Le <span class="style_nb">6</span> vérifie qu’il a bien pensé à tout, le <span class="style_nb">8</span> prend des décisions facilement et instinctivement.</p>
-				</div>
-				<div class="profil p6 p9">
-					<h1>Profil <span class="style_nb">6</span> – Profil <span class="style_nb">9</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Les deux types se trouvent de part et d’autre d’une flèche&#160;: le <span class="style_nb">6</span> s’intègre en <span class="style_nb">9</span>, le <span class="style_nb">9</span> se désintègre en <span class="style_nb">6</span>.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">6</span> est méfiant et cherche la protection du groupe, le <span class="style_nb">9</span> est confiant et recherche la fusion avec le groupe.</p>
-				</div>
-				<div class="profil p7 p0">
-					<h1>Profil <span class="style_nb">7</span> – Profil <span class="style_nb">7</span></h1>
-					<h2>Pourquoi on ne peut pas les confondre&#160;?</h2>
-					<p>Parce que c’est le même profil&#160;!</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Rien ne les distingue&#160;!</p>
-				</div>
-				<div class="profil p7 p8">
-					<h1>Profil <span class="style_nb">7</span> – Profil <span class="style_nb">8</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Plein d’énergie, enthousiaste et exubérant. Autonome et indépendant. Souvent égocentrique. Impulsif, voire parfois agressif. Contre l’autorité et testant les limites.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">7</span> cherche la limite mais ne veut pas créer de sentiments négatifs, le <span class="style_nb">8</span> se moque souvent de l’harmonie de la situation. Le <span class="style_nb">7</span> est souriant, le <span class="style_nb">8</span> est intimidant. Le <span class="style_nb">7</span> peut être indirect et évasif, le <span class="style_nb">8</span> est direct et sans détours. Le <span class="style_nb">7</span> est léger et aérien, le <span class="style_nb">8</span> en impose.</p>
-				</div>
-				<div class="profil p7 p9">
-					<h1>Profil <span class="style_nb">7</span> – Profil <span class="style_nb">9</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Se centrant sur les aspects positifs. Amical et idéaliste. Évitant les conflits et les situations amenant des sentiments désagréables. N’aimant pas qu’on attende quelque chose de lui. Souvent bavard. Des problèmes à faire des choix.</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">7</span> est vantard, le <span class="style_nb">9</span> est modeste et effacé. Le <span class="style_nb">7</span> cherche la montée d’adrénaline, le <span class="style_nb">9</span> cherche le contentement. Le <span class="style_nb">7</span> obtient ce qu’il veut, directement ou indirectement, le <span class="style_nb">9</span> ne sait pas ce qu’il veut. Le <span class="style_nb">7</span> s’échappe des situations difficiles ou ennuyantes, le <span class="style_nb">9</span> ne remarque pas que la situation lui pose un problème. Le <span class="style_nb">7</span> initie de nouvelles activités, le <span class="style_nb">9</span> attend que les autres prennent l’initiative. Le <span class="style_nb">7</span> peut être brusque et impatient, le <span class="style_nb">9</span> est doux et jamais pressé.</p>
-				</div>
-				<div class="profil p8 p0">
-					<h1>Profil <span class="style_nb">8</span> – Profil <span class="style_nb">8</span></h1>
-					<h2>Pourquoi on ne peut pas les confondre&#160;?</h2>
-					<p>Parce que c’est le même profil&#160;!</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Rien ne les distingue&#160;!</p>
-				</div>
-				<div class="profil p8 p9">
-					<h1>Profil <span class="style_nb">8</span> – Profil <span class="style_nb">9</span></h1>
-					<h2>Pourquoi on peut les confondre&#160;?</h2>
-					<p>Cela nous parait difficile...</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Le <span class="style_nb">8</span> en impose et va facilement au conflit, le <span class="style_nb">9</span> est discret et évite le conflit à tout prix.</p>
-				</div>
-				<div class="profil p9 p0">
-					<h1>Profil <span class="style_nb">9</span> – Profil <span class="style_nb">9</span></h1>
-					<h2>Pourquoi on ne peut pas les confondre&#160;?</h2>
-					<p>Parce que c’est le même profil&#160;!</p>
-					<h2>Ce qui les distingue</h2>
-					<p>Rien ne les distingue&#160;!</p>
-				</div>
-			</div>
-		</div>
-		<!-- End wrapper -->
-	</body>
+<div class="profil p1 p0">
+	<h1>Profil <span class="style_nb">1</span> – Profil <span class="style_nb">1</span></h1>
+	<h2>Pourquoi on ne peut pas les confondre&#160;?</h2>
+	<p>Parce que c’est le même profil&#160;!</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Rien ne les distingue&#160;!</p>
+</div>
+<div class="profil p1 p2">
+	<h1>Profil <span class="style_nb">1</span> – Profil <span class="style_nb">2</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Aidant les autres, aimant donner des conseils. Essayant de faire au mieux et ayant tendance à se faire du souci. Réticent à dire ce qu’il veut ou a besoin.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">1</span> est soucieux de faire de la bonne façon, le <span class="style_nb">2</span> d’établir de bonnes relations avec les autres. Le <span class="style_nb">1</span> a tendance a garder ses sentiments pour lui, le <span class="style_nb">2</span> à les montrer. Le <span class="style_nb">1</span> pose des frontières claires et est sceptique, les frontières du <span class="style_nb">2</span> sont souvent floues et il fait confiance.</p>
+</div>
+<div class="profil p1 p3">
+	<h1>Profil <span class="style_nb">1</span> – Profil <span class="style_nb">3</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>De grandes attentes vis à vis de soi comme des autres. Des difficultés à déléguer. Travaillant dur, actif, efficace et visant à conclure.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le discours du <span class="style_nb">1</span> est parfois moraliste, celui du <span class="style_nb">3</span> peut être chargé de vantardise. Le <span class="style_nb">1</span> accomplit en général une tâche après l’autre, le <span class="style_nb">3</span> en a plusieurs sur le feu en même temps. Le <span class="style_nb">1</span> fait les choses méthodiquement, avec pragmatisme, le <span class="style_nb">3</span> est plus charmeur et peut changer sa cible pour s’adapter à la situation ou aux attentes des autres. Le <span class="style_nb">1</span> est pessimiste et s’inquiète des erreurs du passé et du futur, le <span class="style_nb">3</span> est optimiste et se focalise sur ses succès.</p>
+</div>
+<div class="profil p1 p4">
+	<h1>Profil <span class="style_nb">1</span> – Profil <span class="style_nb">4</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Idéaliste et insatisfait des choses telles qu’elles sont. Des idéaux élevés pour lui-même.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">1</span> contrôle ses émotions, le <span class="style_nb">4</span> affiche sa tristesse. Le <span class="style_nb">1</span> voit les sentiments forts comme dangereux ou inadéquats, le <span class="style_nb">4</span> valorise les sentiments profonds. Le <span class="style_nb">1</span> suit les règles de la société, le <span class="style_nb">4</span> suit ses propres règles. Le <span class="style_nb">1</span> est réaliste, concret, terre-à-terre, le <span class="style_nb">4</span> est créatif et plein de fantaisie.</p>
+</div>
+<div class="profil p1 p5">
+	<h1>Profil <span class="style_nb">1</span> – Profil <span class="style_nb">5</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Logique, objectif, contrôlant ses émotions. Des idéaux élevés. Souci de ne pas faire d’erreurs. Indépendant et ne comptant que sur lui.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">1</span> est terre-à-terre et vise des améliorations concrètes, le <span class="style_nb">5</span> est dans l’abstraction et la théorie. Le <span class="style_nb">1</span> suit les règles, le <span class="style_nb">5</span> n’aime pas les conventions ni l’autoritarisme. Le <span class="style_nb">1</span> s’implique et est actif, le <span class="style_nb">5</span> se tient en retrait et observe. Le <span class="style_nb">1</span> cherche à réduire le nombre d’options et à prendre des décisions, le <span class="style_nb">5</span> cherche à recueillir de l’information.</p>
+</div>
+<div class="profil p1 p6">
+	<h1>Profil <span class="style_nb">1</span> – Profil <span class="style_nb">6</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Fort sens du devoir et de l’engagement. Sceptique au départ, la confiance s’établit lentement. Souvent inquiet et pessimiste. A tendance à travailler trop et a du mal à se relaxer. Aime les procédures clairement définies.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">1</span>, instinctif, est bien ancré, le <span class="style_nb">6</span> est anxieux par nature. Le <span class="style_nb">1</span> réprime sa colère, le <span class="style_nb">6</span> la montre s’il est contrephobique. Le comportement du <span class="style_nb">1</span> est prévisible, celui du <span class="style_nb">6</span> imprévisible. Le souci du <span class="style_nb">1</span> est d’avoir raison, celui du <span class="style_nb">6</span> est d’être en sécurité. Le <span class="style_nb">1</span> se décide rapidement, le <span class="style_nb">6</span> a du mal à se décider.</p>
+</div>
+<div class="profil p1 p7">
+	<h1>Profil <span class="style_nb">1</span> – Profil <span class="style_nb">7</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Les deux types se trouvent de part et d’autre d’une flèche&#160;: le <span class="style_nb">1</span> s’intègre en <span class="style_nb">7</span>, le <span class="style_nb">7</span> se désintègre en <span class="style_nb">1</span>.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">1</span> évite à tout prix la colère et contrôle ses émotions, le <span class="style_nb">7</span> apparaît souvent exubérant dans son mode d’expression. Le <span class="style_nb">1</span> peut souffrir pour son idéal, le <span class="style_nb">7</span> évite à tout prix la souffrance.</p>
+</div>
+<div class="profil p1 p8">
+	<h1>Profil <span class="style_nb">1</span> – Profil <span class="style_nb">8</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Travaillant dur, ambitieux, centré sur l’objectif. Confiant en soi et direct. Indépendant. Parfois impatient, polémique et insensible aux sentiments des autres. Prenant des responsabilités et poussant les autres à faire de même. Tendance à voir les choses en noir et blanc.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">1</span> est souvent modéré et courtois, le <span class="style_nb">8</span> peut être excessif et grossier. Le <span class="style_nb">1</span> essaye d’être raisonnable, le <span class="style_nb">8</span> aime parfois choquer et se moque de ce qu’on pense de lui. Le <span class="style_nb">1</span> est méthodique, le <span class="style_nb">8</span> est spontané. La colère du <span class="style_nb">1</span> s’accumule jusqu’à ce qu’il explose, le <span class="style_nb">8</span> l’exprime dans l’instant. Le <span class="style_nb">1</span> met les autres sous pression pour qu’ils changent, le <span class="style_nb">8</span> intimide les autres pour parvenir à ce résultat. Le <span class="style_nb">1</span> suit les règles, le <span class="style_nb">8</span> y déroge si elles le dérange, même s’il en est l’auteur.</p>
+</div>
+<div class="profil p1 p9">
+	<h1>Profil <span class="style_nb">1</span> – Profil <span class="style_nb">9</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Franchement, ça semble assez difficile...</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">1</span> est toujours en mouvement, le <span class="style_nb">9</span> agit en général dans le calme.</p>
+</div>
+<div class="profil p2 p0">
+	<h1>Profil <span class="style_nb">2</span> – Profil <span class="style_nb">2</span></h1>
+	<h2>Pourquoi on ne peut pas les confondre&#160;?</h2>
+	<p>Parce que c’est le même profil&#160;!</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Rien ne les distingue&#160;!</p>
+</div>
+<div class="profil p2 p3">
+	<h1>Profil <span class="style_nb">2</span> – Profil <span class="style_nb">3</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Amical, sociable, enthousiaste. Soigne son image. Aime l’approbation, la reconnaissance, l’admiration. Peut cacher sa vulnérabilité derrière une façade de confiance en soi. Des difficultés à exprimer des sentiments négatifs.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">2</span> veut être apprécié pour sa générosité, le <span class="style_nb">3</span> pour ses réalisations et succès. Le <span class="style_nb">2</span> se sent exister par ses relations aux autres, le <span class="style_nb">3</span> par son travail. Le <span class="style_nb">2</span> peut parfois présenter des manifestations émotionnelles débordantes et être dramatique, le <span class="style_nb">3</span> est relativement dans la retenue émotionnelle. Le <span class="style_nb">2</span> aime parler de ses sentiments, le <span class="style_nb">3</span> aime parler de ses objectifs. Le <span class="style_nb">2</span> aime souvent aller au bout de ses sentiments, le <span class="style_nb">3</span> évite les sentiments forts.</p>
+</div>
+<div class="profil p2 p4">
+	<h1>Profil <span class="style_nb">2</span> – Profil <span class="style_nb">4</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>La relation à l’autre a une grande importance. Grande sensibilité au rejet. Peut être dramatique, possessif, jaloux. Souvent de la culpabilité.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">2</span> se concentre sur l’autre, le <span class="style_nb">4</span> se centre sur lui-même. Le <span class="style_nb">2</span> tente de cacher sa tristesse, le <span class="style_nb">4</span> l’exhibe. Le <span class="style_nb">2</span> a tendance à vouloir entrer en contact, le <span class="style_nb">4</span> est souvent en retrait. Le <span class="style_nb">2</span> s’exprime en donnant aux autres, le <span class="style_nb">4</span> en communiquant ses sentiments.</p>
+</div>
+<div class="profil p2 p5">
+	<h1>Profil <span class="style_nb">2</span> – Profil <span class="style_nb">5</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Parce que ça nous parait assez difficile...</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">5</span> ne s’implique pas dans les relations, le <span class="style_nb">2</span> est très impliqué dans les relations.</p>
+</div>
+<div class="profil p2 p6">
+	<h1>Profil <span class="style_nb">2</span> – Profil <span class="style_nb">6</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Amical et montrant de la compassion. Donnant de l’aide et des conseils. Sensible à la critique. Veut être aimé et peut se subordonner à l’autre. Peur de l’abandon.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">2</span> veut par-dessus tout qu’on l’aime, le <span class="style_nb">6</span> veut par-dessus tout qu’on le protège. Le <span class="style_nb">2</span> est flatteur, le <span class="style_nb">6</span> est soupçonneux face à la flatterie (bien qu’il puisse parfois l’utiliser). Le <span class="style_nb">2</span> a besoin de sentir que sa décision est la bonne, le <span class="style_nb">6</span> a besoin de l’avoir analysé. Le <span class="style_nb">2</span> se centre sur le positif, le <span class="style_nb">6</span> imagine le pire. Le <span class="style_nb">2</span> fait facilement confiance, le <span class="style_nb">6</span> teste avant d’accorder sa confiance.</p>
+</div>
+<div class="profil p2 p7">
+	<h1>Profil <span class="style_nb">2</span> – Profil <span class="style_nb">7</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Enthousiasme, optimisme et idéalisme. Aimant motiver les autres. Charmeur et séducteur. Spontané.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">2</span> se centre sur la vie de l’autre, le <span class="style_nb">7</span> sur ses propres projets. Le <span class="style_nb">2</span> veut que les gens se sentent à l’aise pour lui raconter leurs problèmes, le<span class="style_nb">7</span> est mal à l’aise d’écouter les problèmes des autres. Le <span class="style_nb">2</span> veut se rendre indispensable, le <span class="style_nb">7</span> ne veut pas qu’on dépende de lui. Le <span class="style_nb">2</span> essaye d’avoir du tact, le <span class="style_nb">7</span> peut être relativement « sans gants ». Le <span class="style_nb">2</span> abandonne son centre d’intérêt au profit de la relation, le <span class="style_nb">7</span> reste attentif à son propre intérêt.</p>
+</div>
+<div class="profil p2 p8">
+	<h1>Profil <span class="style_nb">2</span> – Profil <span class="style_nb">8</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Les <span class="style_nb">2</span> types se trouvent de part et d’autre d’une flèche&#160;: le <span class="style_nb">8</span> s’intègre en <span class="style_nb">2</span>, le <span class="style_nb">2</span> se désintègre en <span class="style_nb">8</span>.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">2</span> obtient ce qu’il désire par la séduction et la manipulation, le <span class="style_nb">8</span> par l’intimidation.</p>
+</div>
+<div class="profil p2 p9">
+	<h1>Profil <span class="style_nb">2</span> – Profil <span class="style_nb">9</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Empathie, générosité. Difficultés à s’imposer et à exprimer de la colère. Dépend de l’autre pour se sentir bien. Est accommodant avec son partenaire.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">2</span> peut être dramatique, le <span class="style_nb">9</span> reste relativement réservé et calme. Le <span class="style_nb">2</span> fait connaître ses sentiments relativement facilement, le <span class="style_nb">9</span> garde ses sentiments pour lui. Le <span class="style_nb">2</span> se préoccupe souvent d’une personne à la fois, le <span class="style_nb">9</span> fusionne avec ce que la situation demande&#160;: personne ou groupe. Le <span class="style_nb">2</span> a confiance en lui et se préoccupe de son image, le <span class="style_nb">9</span> semble modeste et sans prétention.</p>
+</div>
+<div class="profil p3 p0">
+	<h1>Profil <span class="style_nb">3</span> – Profil <span class="style_nb">3</span></h1>
+	<h2>Pourquoi on ne peut pas les confondre&#160;?</h2>
+	<p>Parce que c’est le même profil&#160;!</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Rien ne les distingue&#160;!</p>
+</div>
+<div class="profil p3 p4">
+	<h1>Profil <span class="style_nb">3</span> – Profil <span class="style_nb">4</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Il ne se ressemblent pas beaucoup...</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">3</span> est dans le « faire », le <span class="style_nb">4</span> est dans l’émotion.</p>
+</div>
+<div class="profil p3 p5">
+	<h1>Profil <span class="style_nb">3</span> – Profil <span class="style_nb">5</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Le <span class="style_nb">3</span> se prend parfois pour un <span class="style_nb">5</span>, car il manque d’accès à son moi profond et ressent un vide intérieur fort.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Il est en général le seul à faire la confusion&#160;!</p>
+</div>
+<div class="profil p3 p6">
+	<h1>Profil <span class="style_nb">3</span> – Profil <span class="style_nb">6</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Responsable et plein d’énergie. Ayant de grandes attentes pour lui et les autres. Objectif, opiniâtre et aimant contrôler la situation. Souvent surmené et ayant du mal à relâcher la pression.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">3</span> se centre sur ses objectifs personnels, le <span class="style_nb">6</span> sur leur devoir envers un groupe ou une cause. Le <span class="style_nb">3</span> est confiant est optimiste, le <span class="style_nb">6</span> est anxieux et pessimiste. Le <span class="style_nb">3</span> s’intéresse plus à ce qui peut être fait qu’à ce qui ne va pas, le <span class="style_nb">6</span> s’attarde sur les erreurs et prévoit le désastre. Le <span class="style_nb">3</span> expédie les choses à faire, le <span class="style_nb">6</span> tergiverse et hésite. Le <span class="style_nb">3</span> peu avoir du mal à travailler en équipe si cela nuit à son efficacité, le <span class="style_nb">6</span> prend plaisir à participer à un travail de groupe. Le <span class="style_nb">3</span> évite souvent la confrontation directe, le <span class="style_nb">6</span> y fonce s’il est contrephobique.</p>
+</div>
+<div class="profil p3 p7">
+	<h1>Profil <span class="style_nb">3</span> – Profil <span class="style_nb">7</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Actif, optimiste et aimant aller vite. Amical et parfois superficiel. Charmeur, à la recherche de l’admiration et de l’attention. Mal à l’aise avec des gens malheureux ou déprimés. Tendance à se rétirer si la relation devient trop intime. Aimant relever des défis.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">3</span> a toujours de nouveaux objectifs pour travailler, le <span class="style_nb">7</span> fait toujours des plans pour de nouvelles aventures. Le <span class="style_nb">3</span> est parfois un peu réservé, le <span class="style_nb">7</span> n’a pas d’inhibition et est impulsif. Le <span class="style_nb">3</span> est conformiste, le <span class="style_nb">7</span> en dehors des conventions et refusant l’autoritarisme. Le <span class="style_nb">3</span> peut avoir plusieurs projets à la fois et chercher à tous les réaliser, le <span class="style_nb">7</span> a aussi plusieurs projets mais peut en laisser certains inachevés.</p>
+</div>
+<div class="profil p3 p8">
+	<h1>Profil <span class="style_nb">3</span> – Profil <span class="style_nb">8</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Beaucoup d’énergie et d’enthousiasme. Ambitieux et parfois fou de travail. Aimant prendre des responsabilités et le leadership, en motivant les autres. Autonome. Tendance à cacher ses faiblesses.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">3</span> cherche à être admiré, le <span class="style_nb">8</span> cherche à être respecté. Le <span class="style_nb">3</span> est assez conformiste, le <span class="style_nb">8</span> est fier d’être individualiste et non conformiste. Le <span class="style_nb">3</span> a une certaine réserve, le <span class="style_nb">8</span> est bruyant, exubérant. Le <span class="style_nb">3</span> use de diplomatie pour éviter le conflit, le <span class="style_nb">8</span> n’a pas peur de choquer et d’aller à l’affrontement. Le <span class="style_nb">3</span> peut manipuler les autres pour les faire travailler plus, le <span class="style_nb">8</span> se moque d’avoir une image de gentil.</p>
+</div>
+<div class="profil p3 p9">
+	<h1>Profil <span class="style_nb">3</span> – Profil <span class="style_nb">9</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Les deux types se trouvent de part et d’autre d’une flèche&#160;: le <span class="style_nb">9</span> s’intègre en <span class="style_nb">3</span>, le <span class="style_nb">3</span> se désintègre en <span class="style_nb">9</span>.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">3</span> est centré sur son objectif, le <span class="style_nb">9</span> ne sait pas trop ce qu’il veut faire.</p>
+</div>
+<div class="profil p4 p0">
+	<h1>Profil <span class="style_nb">4</span> – Profil <span class="style_nb">4</span></h1>
+	<h2>Pourquoi on ne peut pas les confondre&#160;?</h2>
+	<p>Parce que c’est le même profil&#160;!</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Rien ne les distingue&#160;!</p>
+</div>
+<div class="profil p4 p5">
+	<h1>Profil <span class="style_nb">4</span> – Profil <span class="style_nb">5</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Original et créatif. Tendance à être non conventionnel ou même excentrique. Très sensible à la critique. A l’écart et parfois solitaire, mal à l’aise en société.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">4</span> est dans l’émotion et l’humeur du moment, le <span class="style_nb">5</span> est calme et objectif. Le <span class="style_nb">4</span> cherche à faire monter l’intensité émotionnelle dans une relation, le <span class="style_nb">5</span> cherche une relation stable et sans remous. Le <span class="style_nb">4</span> veut exprimer ses sentiments et être compris, le <span class="style_nb">5</span> est mal à l’aise pour exprimer ses sentiments et les garde pour lui. Le <span class="style_nb">4</span> s’implique avec les autres, le <span class="style_nb">5</span> reste à distance, même dans l’intimité.</p>
+</div>
+<div class="profil p4 p6">
+	<h1>Profil <span class="style_nb">4</span> – Profil <span class="style_nb">6</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Chaleureux et dans la compassion. Analysant et remettant en cause ses motivations et sentiments, ainsi que ceux des autres. Peur de l’abandon. Très sensible, se sentant facilement incompris, sujet au sentiment de honte ou de culpabilité.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">4</span> cherche à créer des relations intenses, le <span class="style_nb">6</span> des relations sécurisantes. Le <span class="style_nb">4</span> fait confiance à ses sentiments, le <span class="style_nb">6</span> raisonne pour vérifier ses impressions. Le <span class="style_nb">4</span> a souvent une voix calme et parfois triste, le <span class="style_nb">6</span> a souvent une voix dans laquelle la nervosité résonne. Le <span class="style_nb">4</span> est enclin à la dépression, le <span class="style_nb">6</span> est enclin à l’anxiété.</p>
+</div>
+<div class="profil p4 p7">
+	<h1>Profil <span class="style_nb">4</span> – Profil <span class="style_nb">7</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Imaginatif et expressif. Oscillant entre le plaisir d’être engagé et la volonté d’indépendance. Cherchant l’intensité, non conformiste, idéaliste. Goût de la démesure. Tendance à fantasmer une relation amoureuse idéale.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">4</span> souhaite être en connexion émotionnelle à l’autre, le <span class="style_nb">7</span> préférera souvent parler de ses aventures. Le <span class="style_nb">4</span> peut se complaire dans les idées noires, la souffrance et la peine, le <span class="style_nb">7</span> cherche la nouveauté et le bonheur et évite ce qui est désagréable. Le <span class="style_nb">4</span> est dur envers lui-même, le <span class="style_nb">7</span> s’aime bien. Le <span class="style_nb">4</span> est souvent mal à l’aise en groupe, le <span class="style_nb">7</span> y est à l’aise. Le <span class="style_nb">4</span> se rappelle avoir eu une enfance triste ou difficile, le <span class="style_nb">7</span> se rappelle avoir eu une enfance heureuse.</p>
+</div>
+<div class="profil p4 p8">
+	<h1>Profil <span class="style_nb">4</span> – Profil <span class="style_nb">8</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>La confusion nous semble difficile...</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">8</span> ne montre pas d’états d’âme, le <span class="style_nb">4</span> en affiche tout le temps.</p>
+</div>
+<div class="profil p4 p9">
+	<h1>Profil <span class="style_nb">4</span> – Profil <span class="style_nb">9</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Chaleureux et dans la compassion. Évitant le conflit et la confrontation. Sensible à la critique. Têtu et résistant. Parfois des difficultés à prendre des décisions.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">4</span> est théâtral, le <span class="style_nb">9</span> est calme. Le <span class="style_nb">4</span> à souvent un style décalé, le <span class="style_nb">9</span> est plutôt conventionnel à ce niveau. Le <span class="style_nb">4</span> voudrait que les choses soient différentes de ce qu’elles sont, le <span class="style_nb">9</span> accepte le monde tel qu’il est. Le <span class="style_nb">4</span> accuse et provoque si on l’ignore, le <span class="style_nb">9</span> se retire et s’oublie dans une autre occupation. Le <span class="style_nb">4</span> tient à sa mélancolie, le <span class="style_nb">9</span> à tendance à réprouver ce sentiment.</p>
+</div>
+<div class="profil p5 p0">
+	<h1>Profil <span class="style_nb">5</span> – Profil <span class="style_nb">5</span></h1>
+	<h2>Pourquoi on ne peut pas les confondre&#160;?</h2>
+	<p>Parce que c’est le même profil&#160;!</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Rien ne les distingue&#160;!</p>
+</div>
+<div class="profil p5 p6">
+	<h1>Profil <span class="style_nb">5</span> – Profil <span class="style_nb">6</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Compétent et instruit. Ayant un bon sens de l’humour. Jouant souvent l’avocat du diable. Peut se révéler arrogant, cynique, polémique, rebelle. Peut être paranoïaque et négatif.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">5</span> parle doucement, est reservé et en retrait, le <span class="style_nb">6</span> est plus souvent sociable et avenant. Le <span class="style_nb">5</span> se comporte de manière égale, le comportement du <span class="style_nb">6</span> oscille d’un extrême à l’autre. Le <span class="style_nb">5</span> semble souvent calme, le <span class="style_nb">6</span> nerveux. Le <span class="style_nb">5</span> donne une image de détachement émotionnel, le <span class="style_nb">6</span> a des réactions fortes et intenses (surtout le contrephobique).</p>
+</div>
+<div class="profil p5 p7">
+	<h1>Profil <span class="style_nb">5</span> – Profil <span class="style_nb">7</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Les deux types se trouvent de part et d’autre d’une flèche&#160;: le <span class="style_nb">7</span> s’intègre en <span class="style_nb">5</span>, le <span class="style_nb">5</span> se désintègre en <span class="style_nb">7</span>.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">5</span> aime la profondeur, le <span class="style_nb">7</span> aime l’étendue.</p>
+</div>
+<div class="profil p5 p8">
+	<h1>Profil <span class="style_nb">5</span> – Profil <span class="style_nb">8</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Les deux types se trouvent de part et d’autre d’une flèche&#160;: le <span class="style_nb">5</span> s’intègre en <span class="style_nb">8</span>, le <span class="style_nb">8</span> se désintègre en <span class="style_nb">5</span>.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">5</span> est en retrait et observe, le <span class="style_nb">8</span> s’implique et agit.</p>
+</div>
+<div class="profil p5 p9">
+	<h1>Profil <span class="style_nb">5</span> – Profil <span class="style_nb">9</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Évitant le conflit et les situations difficiles. Curieux de récolter des informations. Parle doucement. Passif-agressif.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">5</span> est à l’écart des autres, le <span class="style_nb">9</span> fusionne avec les autres. Le <span class="style_nb">5</span> est méfiant et cynique, le <span class="style_nb">9</span> crédule et optimiste. Le <span class="style_nb">5</span> se fatigue s’il est trop longtemps avec les autres et doit s’isoler, le <span class="style_nb">9</span> peut rester longtemps avec un groupe. Le discours du <span class="style_nb">5</span> est succinct, celui du <span class="style_nb">9</span> est sans fin. Le <span class="style_nb">5</span> est concentré, le <span class="style_nb">9</span> est distrait facilement.</p>
+</div>
+<div class="profil p6 p0">
+	<h1>Profil <span class="style_nb">6</span> – Profil <span class="style_nb">6</span></h1>
+	<h2>Pourquoi on ne peut pas les confondre&#160;?</h2>
+	<p>Parce que c’est le même profil&#160;!</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Rien ne les distingue&#160;!</p>
+</div>
+<div class="profil p6 p7">
+	<h1>Profil <span class="style_nb">6</span> – Profil <span class="style_nb">7</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Avenant, sociable, avec un bon sens de l’humour. Impulsif et nerveux.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">6</span> aime la sécurité de l’engagement, le <span class="style_nb">7</span> garde des options ouvertes et évite de s’engager. Le <span class="style_nb">6</span> aime les choses prévisibles, le <span class="style_nb">7</span> aime la nouveauté et les surprises agréables. Le <span class="style_nb">6</span> contrôle son comportement, le <span class="style_nb">7</span> se laisse aller. Le <span class="style_nb">6</span> analyse les motivations des autres avec méfiance, le <span class="style_nb">7</span> espère juste que l’autre voudra partager son aventure.</p>
+</div>
+<div class="profil p6 p8">
+	<h1>Profil <span class="style_nb">6</span> – Profil <span class="style_nb">8</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>La confusion est possible avec le <span class="style_nb">6</span> contrephobique Épris de justice et de vérité, défendant le faible. Loyal et protecteur. Intimidation, violence, hostilité. Manque de confiance envers les autres. Le monde est dangereux. Contre l’autoritarisme et le conformisme.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">6</span> peut céder sous le pression, le <span class="style_nb">8</span> tente d’intimider sous la pression. Le <span class="style_nb">6</span> attaque mais prend des mesures pour se protéger, le <span class="style_nb">8</span> va de l’avant. Le <span class="style_nb">6</span> peut donner de longues explications ou se répéter pour s’assurer qu’il a été compris, le <span class="style_nb">8</span> va droit au but. Le <span class="style_nb">6</span> vérifie qu’il a bien pensé à tout, le <span class="style_nb">8</span> prend des décisions facilement et instinctivement.</p>
+</div>
+<div class="profil p6 p9">
+	<h1>Profil <span class="style_nb">6</span> – Profil <span class="style_nb">9</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Les deux types se trouvent de part et d’autre d’une flèche&#160;: le <span class="style_nb">6</span> s’intègre en <span class="style_nb">9</span>, le <span class="style_nb">9</span> se désintègre en <span class="style_nb">6</span>.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">6</span> est méfiant et cherche la protection du groupe, le <span class="style_nb">9</span> est confiant et recherche la fusion avec le groupe.</p>
+</div>
+<div class="profil p7 p0">
+	<h1>Profil <span class="style_nb">7</span> – Profil <span class="style_nb">7</span></h1>
+	<h2>Pourquoi on ne peut pas les confondre&#160;?</h2>
+	<p>Parce que c’est le même profil&#160;!</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Rien ne les distingue&#160;!</p>
+</div>
+<div class="profil p7 p8">
+	<h1>Profil <span class="style_nb">7</span> – Profil <span class="style_nb">8</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Plein d’énergie, enthousiaste et exubérant. Autonome et indépendant. Souvent égocentrique. Impulsif, voire parfois agressif. Contre l’autorité et testant les limites.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">7</span> cherche la limite mais ne veut pas créer de sentiments négatifs, le <span class="style_nb">8</span> se moque souvent de l’harmonie de la situation. Le <span class="style_nb">7</span> est souriant, le <span class="style_nb">8</span> est intimidant. Le <span class="style_nb">7</span> peut être indirect et évasif, le <span class="style_nb">8</span> est direct et sans détours. Le <span class="style_nb">7</span> est léger et aérien, le <span class="style_nb">8</span> en impose.</p>
+</div>
+<div class="profil p7 p9">
+	<h1>Profil <span class="style_nb">7</span> – Profil <span class="style_nb">9</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Se centrant sur les aspects positifs. Amical et idéaliste. Évitant les conflits et les situations amenant des sentiments désagréables. N’aimant pas qu’on attende quelque chose de lui. Souvent bavard. Des problèmes à faire des choix.</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">7</span> est vantard, le <span class="style_nb">9</span> est modeste et effacé. Le <span class="style_nb">7</span> cherche la montée d’adrénaline, le <span class="style_nb">9</span> cherche le contentement. Le <span class="style_nb">7</span> obtient ce qu’il veut, directement ou indirectement, le <span class="style_nb">9</span> ne sait pas ce qu’il veut. Le <span class="style_nb">7</span> s’échappe des situations difficiles ou ennuyantes, le <span class="style_nb">9</span> ne remarque pas que la situation lui pose un problème. Le <span class="style_nb">7</span> initie de nouvelles activités, le <span class="style_nb">9</span> attend que les autres prennent l’initiative. Le <span class="style_nb">7</span> peut être brusque et impatient, le <span class="style_nb">9</span> est doux et jamais pressé.</p>
+</div>
+<div class="profil p8 p0">
+	<h1>Profil <span class="style_nb">8</span> – Profil <span class="style_nb">8</span></h1>
+	<h2>Pourquoi on ne peut pas les confondre&#160;?</h2>
+	<p>Parce que c’est le même profil&#160;!</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Rien ne les distingue&#160;!</p>
+</div>
+<div class="profil p8 p9">
+	<h1>Profil <span class="style_nb">8</span> – Profil <span class="style_nb">9</span></h1>
+	<h2>Pourquoi on peut les confondre&#160;?</h2>
+	<p>Cela nous parait difficile...</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Le <span class="style_nb">8</span> en impose et va facilement au conflit, le <span class="style_nb">9</span> est discret et évite le conflit à tout prix.</p>
+</div>
+<div class="profil p9 p0">
+	<h1>Profil <span class="style_nb">9</span> – Profil <span class="style_nb">9</span></h1>
+	<h2>Pourquoi on ne peut pas les confondre&#160;?</h2>
+	<p>Parce que c’est le même profil&#160;!</p>
+	<h2>Ce qui les distingue</h2>
+	<p>Rien ne les distingue&#160;!</p>
+</div>
+</div>
+
+</body>
 </html>
