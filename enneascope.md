@@ -1,11 +1,13 @@
-# PROFIL 1 – PROFIL 1
+# PROFIL 1
 
-## Pourquoi on ne peut pas les confondre ?
-Parce que c’est le même profil !
-
-## Ce qui les distingue
-Rien ne les distingue !
-
+|                      |                                    |
+| ---                  | ---                                |
+| Compulsion           | Évite la colère                    |
+| Passion              | Colère                             |
+| Mécanisme de défense | Formation réactionnelle            |
+| Image de soi         | « Je suis droit ; je travaille »   |
+| Vertu                | Patience                           |
+| Apport               | Rigueur personnelle, idéaux élevés |
 
 
 # PROFIL 1 – PROFIL 2
@@ -123,14 +125,16 @@ Le 1 est toujours en mouvement, le 9 agit en général dans le calme.
 
 
 
-# PROFIL 2 – PROFIL 2
+# PROFIL 2
 
-## Pourquoi on ne peut pas les confondre ?
-Parce que c’est le même profil !
-
-## Ce qui les distingue
-Rien ne les distingue !
-
+|                      |                                          |
+| ---                  | ---                                      |
+| Compulsion           | Évite de reconnaître ses propres besoins |
+| Passion              | Orgueil                                  |
+| Mécanisme de défense | Répression                               |
+| Image de soi         | « J’aime ; j’aide »                      |
+| Vertu                | Humilité                                 |
+| Apport               | Amour                                    |
 
 
 
@@ -236,13 +240,16 @@ Le 2 a confiance en lui et se préoccupe de son image, le 9 semble modeste et sa
 
 
 
-# PROFIL 3 – PROFIL 3
+# PROFIL 3
 
-## Pourquoi on ne peut pas les confondre ?
-Parce que c’est le même profil !
-
-## Ce qui les distingue
-Rien ne les distingue !
+|                      |                                   |
+| ---                  | ---                               |
+| Compulsion           | Évite l’échec                     |
+| Passion              | Mensonge                          |
+| Mécanisme de défense | Identification                    |
+| Image de soi         | « Je réussis ; je suis efficace » |
+| Vertu                | Vérité                            |
+| Apport               | Capacité à réaliser et à réussir  |
 
 
 
@@ -328,13 +335,16 @@ Le 3 est centré sur son objectif, le 9 ne sait pas trop ce qu’il veut faire.
 
 
 
-# PROFIL 4 – PROFIL 4
+# PROFIL 4
 
-## Pourquoi on ne peut pas les confondre ?
-Parce que c’est le même profil !
-
-## Ce qui les distingue
-Rien ne les distingue !
+|                      |                                          |
+| ---                  | ---                                      |
+| Compulsion           | Évite la banalité                        |
+| Passion              | Envie                                    |
+| Mécanisme de défense | Introjection, sublimation                |
+| Image de soi         | « Je suis différent ; je suis sensible » |
+| Vertu                | Harmonie, contentement                   |
+| Apport               | Sens du beau                             |
 
 
 
@@ -416,13 +426,16 @@ Le 4 tient à sa mélancolie, le 9 à tendance à réprouver ce sentiment.
 
 
 
-# PROFIL 5 – PROFIL 5
+# PROFIL 5
 
-## Pourquoi on ne peut pas les confondre ?
-Parce que c’est le même profil !
-
-## Ce qui les distingue
-Rien ne les distingue !
+|                      |                            |
+| ---                  | ---                        |
+| Compulsion           | Évite le vide intérieur    |
+| Passion              | Avarice                    |
+| Mécanisme de défense | Isolation                  |
+| Image de soi         | « Je sais ; je comprends » |
+| Vertu                | Désintéressement           |
+| Apport               | Connaissance, précision    |
 
 
 
@@ -480,13 +493,16 @@ Le 5 est concentré, le 9 est distrait facilement.
 
 
 
-# PROFIL 6 – PROFIL 6
+# PROFIL 6
 
-## Pourquoi on ne peut pas les confondre ?
-Parce que c’est le même profil !
-
-## Ce qui les distingue
-Rien ne les distingue !
+|                      |                                        |
+| ---                  | ---                                    |
+| Compulsion           | Évite la deviance                      |
+| Passion              | Peur                                   |
+| Mécanisme de défense | Projection                             |
+| Image de soi         | « Je suis loyal ; je fais mon devoir » |
+| Vertu                | Courage                                |
+| Apport               | Loyauté                                |
 
 
 
@@ -531,13 +547,16 @@ Le 6 est méfiant et cherche la protection du groupe, le 9 est confiant et reche
 
 
 
-# PROFIL 7 – PROFIL 7
+# PROFIL 7
 
-## Pourquoi on ne peut pas les confondre ?
-Parce que c’est le même profil !
-
-## Ce qui les distingue
-Rien ne les distingue !
+|                      |                                         |
+| ---                  | ---                                     |
+| Compulsion           | Évite la souffrance                     |
+| Passion              | Intempérance                            |
+| Mécanisme de défense | Rationalisation                         |
+| Image de soi         | « Je suis optimiste ; je suis heureux » |
+| Vertu                | Tempérance                              |
+| Apport               | Joie, optimisme                         |
 
 
 
@@ -575,13 +594,16 @@ Le 7 initie de nouvelles activités, le 9 attend que les autres prennent l’ini
 
 
 
-# PROFIL 8 – PROFIL 8
+# PROFIL 8
 
-## Pourquoi on ne peut pas les confondre ?
-Parce que c’est le même profil !
-
-## Ce qui les distingue
-Rien ne les distingue !
+|                      |                                  |
+| ---                  | ---                              |
+| Compulsion           | Évite la faiblesse               |
+| Passion              | Excès                            |
+| Mécanisme de défense | Dénégation                       |
+| Image de soi         | « Je suis fort ; je suis juste » |
+| Vertu                | Simplicité                       |
+| Apport               | Puissance, courage               |
 
 
 
@@ -595,12 +617,13 @@ Le 8 en impose et va facilement au conflit, le 9 est discret et évite le confli
 
 
 
-# PROFIL 9 – PROFIL 9
+# PROFIL 9
 
-## Pourquoi on ne peut pas les confondre ?
-Parce que c’est le même profil !
-
-## Ce qui les distingue
-Rien ne les distingue !
-
-
+|                      |                                         |
+| ---                  | ---                                     |
+| Compulsion           | Évite les conflits                      |
+| Passion              | Paresse                                 |
+| Mécanisme de défense | Narcotisation                           |
+| Image de soi         | « Je suis bien, calme, facile à vivre » |
+| Vertu                | Activité                                |
+| Apport               | Acceptation, soutien                    |
