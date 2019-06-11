@@ -42,8 +42,31 @@
 			margin-top: 0.1rem;
 		}
 
+		input {
+			margin: 10px;
+		}
+
+		form {
+			user-select: none;
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
 		label {
-			padding-left: 0.50rem;
+			display: inline-block;
+			height: 40px;
+			width: 60px;
+			padding: 5px 5px 15px 0;
+		}
+
+		label:hover {
+			background-color: #546E7A;
+			color: whitesmoke;
+			border-radius: 10%;
 		}
 
 		img {
@@ -59,6 +82,10 @@
 			label {
 				padding-left: 0.15rem;
 			}
+		}
+
+		.display-none {
+			display: none;
 		}
 
 	</style>
@@ -92,26 +119,26 @@
 						mui-col-lg-4 mui-col-lg-offset-4
 						mui--text-center">
 				<div class="ccDiv">
-					<form class="ccStyle">
-						<input type="checkbox" id="cStyle1" name="cStyle" value="0" /><label for="cStyle1"><span
-								class="style_nb">1</span></label>
-						<input type="checkbox" id="cStyle2" name="cStyle" value="1" /><label for="cStyle2"><span
-								class="style_nb">2</span></label>
-						<input type="checkbox" id="cStyle3" name="cStyle" value="2" /><label for="cStyle3"><span
-								class="style_nb">3</span></label>
-						<input type="checkbox" id="cStyle4" name="cStyle" value="3" /><label for="cStyle4"><span
-								class="style_nb">4</span></label>
-						<input type="checkbox" id="cStyle5" name="cStyle" value="4" /><label for="cStyle5"><span
-								class="style_nb">5</span></label>
-						<input type="checkbox" id="cStyle6" name="cStyle" value="5" /><label for="cStyle6"><span
-								class="style_nb">6</span></label>
-						<input type="checkbox" id="cStyle7" name="cStyle" value="6" /><label for="cStyle7"><span
-								class="style_nb">7</span></label>
-						<input type="checkbox" id="cStyle8" name="cStyle" value="7" /><label for="cStyle8"><span
-								class="style_nb">8</span></label>
-						<input type="checkbox" id="cStyle9" name="cStyle" value="8" /><label for="cStyle9"><span
-								class="style_nb">9</span></label>
-					</form>
+					<form id="frmCheckBoxes">
+						<label data-index="0"><input type="checkbox" id="chkBox1" data-index="0" /><span
+								class="style_nb" data-index="0">1</span></label>
+						<label data-index="1"><input type="checkbox" id="chkBox2" data-index="1" /><span
+								class="style_nb" data-index="1">2</span></label>
+						<label data-index="2"><input type="checkbox" id="chkBox3" data-index="2" /><span
+								class="style_nb" data-index="2">3</span></label>
+						<label data-index="3"><input type="checkbox" id="chkBox4" data-index="3" /><span
+								class="style_nb" data-index="3">4</span></label>
+						<br />
+						<label data-index="4"><input type="checkbox" id="chkBox5" data-index="4" /><span
+								class="style_nb" data-index="4">5</span></label>
+						<label data-index="5"><input type="checkbox" id="chkBox6" data-index="5" /><span
+								class="style_nb" data-index="5">6</span></label>
+						<label data-index="6"><input type="checkbox" id="chkBox7" data-index="6" /><span
+								class="style_nb" data-index="6">7</span></label>
+						<label data-index="7"><input type="checkbox" id="chkBox8" data-index="7" /><span
+								class="style_nb" data-index="7">8</span></label>
+						<label data-index="8"><input type="checkbox" id="chkBox9" data-index="8" /><span
+								class="style_nb" data-index="8">9</span></label> </form>
 				</div>
 
 			</div>
@@ -935,60 +962,49 @@
 		</div>
 	</div>
 
-	<script src="./lib/jquery-1.8.2.min.js"> </script>
 	<script>
+		"use strict"
 
-		$(document).ready(function () {
+		var chk = document.querySelectorAll("input");
+		for (var cpt = 0; cpt < chk.length; cpt++) {
+			chk[cpt].addEventListener("click", displayProfiles);
+		}
+		var twoLastChk = new Array(2);
+		var profils = document.querySelectorAll(".profil");
+		hideAllProfiles();
 
-			$('.profil').hide();
-			chk = $('.ccStyle input');
-			$(chk).attr('checked', false);
+		function hideAllProfiles() {
+			for (var cpt = 0; cpt < profils.length; cpt++) {
+				profils[cpt].classList.add("display-none");
+			}
+		}
 
-			$(chk).click(function () {
-				checkedItems = $(chk).filter(':checked');
-				nbChecked = $(checkedItems).length;
-				switch (true) {
-					case (nbChecked == 1):
-						{
-							twoLastChk = new Array(1);
-							twoLastChk[0] = $(chk).index(checkedItems);
-							break;
-						}
-					case (nbChecked > 1):
-						{
-							twoLastChk[1] = twoLastChk[0];
-							twoLastChk[0] = $(chk).index(this);
-							$(chk).each(function () {
-								isInArray = (jQuery.inArray($(chk).index(this), twoLastChk) > -1);
-								$(this).attr('checked', isInArray);
-							});
-							break;
-						}
-					default:
-						{
-							break;
-						}
-				}
+		function displayProfiles(elem) {
+			var curId = elem.srcElement.getAttribute("data-index");
+			var checkedItems = document.querySelectorAll(":checked");
+			var nbChecked = checkedItems.length;
+			var target = "";
 
-				try {
-					$('.profil').hide();
-					p1 = twoLastChk[0] + 1;
-					if (twoLastChk.length > 1) {
-						p2 = twoLastChk[1] + 1;
+			hideAllProfiles();
+			if (nbChecked === 0) { return; }
+			else if (nbChecked === 1) {
+				twoLastChk[0] = 1 + parseInt(checkedItems[0].getAttribute("data-index"));
+				target = ".profil.p" + twoLastChk[0] + ".p0";
+			} else if (nbChecked > 1) {
+				twoLastChk[1] = twoLastChk[0];
+				twoLastChk[0] = 1 + parseInt(elem.srcElement.getAttribute("data-index"));
+				target = ".profil.p" + twoLastChk[0] + ".p" + twoLastChk[1]
+				for (cpt = 0; cpt < chk.length; cpt++) {
+					if (twoLastChk.indexOf(cpt + 1) === -1) {
+						chk[cpt].checked = false;
 					}
-					else {
-						p2 = 0;
-					}
-					$('.profil.p' + p1 + '.p' + p2).fadeIn(400);
 				}
-				catch (err) {
-					alert("err = " + err);
-				}
-
-
-			});
-
-		});
+			}
+			var newTarget = document.querySelectorAll(target);
+			for (var cpt = 0; cpt < newTarget.length; cpt++) {
+				newTarget[cpt].classList.remove("display-none");
+			}
+		}
 	</script>
 
 </body>
