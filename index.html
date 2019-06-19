@@ -1124,19 +1124,53 @@
 		var profils = document.querySelectorAll(".profil");
 		hideAllProfiles();
 
-		document.addEventListener("keypress", (event) => {
-			var nomTouche = event.key;
-			var profilesID = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
-			if (profilesID.includes(event.key)) {
-				chk[event.key - 1].click();
+		document.onkeydown = function (event) {
+			/**  Raccourcis clavier
+			 * - Les touches 1 à 9 sélectionnent l’ennéatype correspondant et
+			 *   plusieurs ennéatypes peuvent être sélectionnés.
+			 * - Les touches flèches gauche et droite sélectionnent l’ennéatype
+			 *   suivant et un seul ennéatype est sélectionné.
+			 * - Les touches 0 et Esc désélectionnent tous les ennéatypes.
+			 */
+
+			console.log("event.keyCode = " + event.keyCode);
+
+			// Touches 1..9.
+			var profilesID = [49, 50, 51, 52, 53, 54, 55, 56, 57];
+			if (profilesID.includes(event.keyCode)) {
+				chk[event.keyCode - 49].click();
 				return;
 			}
-			var hideKeys = ["Escape", "0"];
-			if (hideKeys.includes(event.key)) {
+
+			// Touches 1..9 pavé numérique.
+			var profilesID = [97, 98, 99, 100, 101, 102, 103, 104, 105];
+			if (profilesID.includes(event.keyCode)) {
+				chk[event.keyCode - 97].click();
+				return;
+			}
+
+			// Touches flèches gauche et droite.
+			var hideKeys = [37, 39];
+			if (hideKeys.includes(event.keyCode)) {
+				var direction = event.keyCode === 37 ? -1 : 1;
+				var checked = document.querySelectorAll(":checked");
+				var nextID = checked.length === 0 ? 0
+					: parseInt(checked[0].getAttribute("data-index")) + direction;
+				if (nextID < 0) nextID = 8; else if (nextID > 8) nextID = 0;
 				hideAllProfiles();
 				uncheckAll();
+				chk[nextID].click();
+				return;
 			}
-		});
+
+			// Touches Esc (27) et 0 (48, 96).
+			var hideKeys = [27, 48, 96];
+			if (hideKeys.includes(event.keyCode)) {
+				hideAllProfiles();
+				uncheckAll();
+				return;
+			}
+		};
 
 		function hideAllProfiles() {
 			for (var cpt = 0; cpt < profils.length; cpt++) {
