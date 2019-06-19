@@ -159,14 +159,19 @@
 					<div class="mui--text-center">
 						<h1>Ennéascope</h1>
 						<p class="text-center mui--text-subhead">L’ENNÉAGRAMME EN BREF</p>
-					</div>
-					<div class="mui--text-center">
 						<div class="img"><img id="enneagramme" src="enneagramme.svg" alt="ennéagramme" /></div>
-					</div>
-					<div class="mui--text-center">
-						<div class="ccDiv">
-							<form id="frmCheckBoxes"><label data-index="0"><input type="checkbox" id="chkBox1" data-index="0" /><span class="cl-nb cl-nb-chk" data-index="0">1</span></label> <label data-index="1"><input type="checkbox" id="chkBox2" data-index="1" /><span class="cl-nb cl-nb-chk" data-index="1">2</span></label> <label data-index="2"><input type="checkbox" id="chkBox3" data-index="2" /><span class="cl-nb cl-nb-chk" data-index="2">3</span></label> <label data-index="3"><input type="checkbox" id="chkBox4" data-index="3" /><span class="cl-nb cl-nb-chk" data-index="3">4</span></label><br /><label data-index="4"><input type="checkbox" id="chkBox5" data-index="4" /><span class="cl-nb cl-nb-chk" data-index="4">5</span></label> <label data-index="5"><input type="checkbox" id="chkBox6" data-index="5" /><span class="cl-nb cl-nb-chk" data-index="5">6</span></label> <label data-index="6"><input type="checkbox" id="chkBox7" data-index="6" /><span class="cl-nb cl-nb-chk" data-index="6">7</span></label> <label data-index="7"><input type="checkbox" id="chkBox8" data-index="7" /><span class="cl-nb cl-nb-chk" data-index="7">8</span></label> <label data-index="8"><input type="checkbox" id="chkBox9" data-index="8" /><span class="cl-nb cl-nb-chk" data-index="8">9</span></label></form>
-						</div>
+						<form id="frmCheckBoxes">
+							<label data-index="0"><input type="checkbox" id="chkBox1" data-index="0" /><span class="cl-nb cl-nb-chk" data-index="0">1</span></label>
+							<label data-index="1"><input type="checkbox" id="chkBox2" data-index="1" /><span class="cl-nb cl-nb-chk" data-index="1">2</span></label>
+							<label data-index="2"><input type="checkbox" id="chkBox3" data-index="2" /><span class="cl-nb cl-nb-chk" data-index="2">3</span></label>
+							<label data-index="3"><input type="checkbox" id="chkBox4" data-index="3" /><span class="cl-nb cl-nb-chk" data-index="3">4</span></label>
+							<br />
+							<label data-index="4"><input type="checkbox" id="chkBox5" data-index="4" /><span class="cl-nb cl-nb-chk" data-index="4">5</span></label>
+							<label data-index="5"><input type="checkbox" id="chkBox6" data-index="5" /><span class="cl-nb cl-nb-chk" data-index="5">6</span></label>
+							<label data-index="6"><input type="checkbox" id="chkBox7" data-index="6" /><span class="cl-nb cl-nb-chk" data-index="6">7</span></label>
+							<label data-index="7"><input type="checkbox" id="chkBox8" data-index="7" /><span class="cl-nb cl-nb-chk" data-index="7">8</span></label>
+							<label data-index="8"><input type="checkbox" id="chkBox9" data-index="8" /><span class="cl-nb cl-nb-chk" data-index="8">9</span></label>
+						</form>
 					</div>
 					<div>
 						<div class="profil p1 p0">
@@ -1119,14 +1124,35 @@
 		var profils = document.querySelectorAll(".profil");
 		hideAllProfiles();
 
+		document.addEventListener("keypress", (event) => {
+			var nomTouche = event.key;
+			var profilesID = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+			if (profilesID.includes(event.key)) {
+				chk[event.key - 1].click();
+				return;
+			}
+			var hideKeys = ["Escape", "0"];
+			if (hideKeys.includes(event.key)) {
+				hideAllProfiles();
+				uncheckAll();
+			}
+		});
+
 		function hideAllProfiles() {
 			for (var cpt = 0; cpt < profils.length; cpt++) {
 				profils[cpt].classList.add("display-none");
 			}
 		}
 
-		function displayProfiles(elem) {
-			var curId = elem.srcElement.getAttribute("data-index");
+		function uncheckAll() {
+			var checkedItems = document.querySelectorAll(":checked");
+			for (var cpt = 0; cpt < checkedItems.length; cpt++) {
+				checkedItems[cpt].checked = false;
+			}
+		}
+
+		function displayProfiles(source) {
+			var curId = source.srcElement.getAttribute("data-index");
 			var checkedItems = document.querySelectorAll(":checked");
 			var nbChecked = checkedItems.length;
 			var target = "";
@@ -1141,7 +1167,7 @@
 				target = ".profil.p" + twoLastChk[0] + ".p0";
 			} else if (nbChecked > 1) {
 				twoLastChk[1] = twoLastChk[0];
-				twoLastChk[0] = 1 + parseInt(elem.srcElement.getAttribute("data-index"));
+				twoLastChk[0] = 1 + parseInt(source.srcElement.getAttribute("data-index"));
 				target = ".profil.p" + twoLastChk[0] + ".p" + twoLastChk[1]
 				for (cpt = 0; cpt < chk.length; cpt++) {
 					if (twoLastChk.indexOf(cpt + 1) === -1) {
