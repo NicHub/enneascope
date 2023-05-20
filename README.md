@@ -2,6 +2,6 @@
 
 ## L’ennéagramme en bref
 
-<http://nichub.github.io/enneascope/>
+<https://nichub.github.io/enneascope/>
 
-<https://hypnodingues.org/assets/enneascope/index.html>
+<https://hypnodingues.org/assets/enneascope/>
