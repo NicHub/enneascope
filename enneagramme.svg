@@ -2,16 +2,27 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9cm"
     height="9cm" viewBox="-1.81 -1.9 3.8 3.8" preserveAspectRatio="xMidYMid slice">
 
+
     <!--
 
-À lire
-http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
+        enneagramme.svg © 2016 by Nicolas Jeanmonod is licensed under CC BY 4.0
 
--->
+        https://creativecommons.org/licenses/by/4.0/
+
+    -->
+
+
+    <!--
+
+        À lire
+        http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
+
+    -->
+
 
     <title>Ennéagramme</title>
+    <desc>L’ennéagramme</desc>
 
-    <desc>L’ennéagramme – Dynamique de connaissance et d’évolution – Fabien et Patricia Chabreuil</desc>
 
     <style type="text/css">
         svg {
@@ -44,7 +55,7 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
 
         circle,
         path {
-            /*vector-effect: non-scaling-stroke;*/
+            /* vector-effect: non-scaling-stroke; */
             /* non-scaling-stroke is not understood the same in FF and Prince*/
             stroke: black;
             fill: none;
@@ -131,7 +142,6 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
             stroke-opacity:0.9" />
         </g>
 
-
         <!-- Utilisé comme base pour toutes les autres flèches -->
         <g id="fleche">
             <path class="non-dashed" style="fill:black;stroke-miterlimit:4;" d="m 0,0  -0.18,-0.03  0,0.06 z" />
@@ -212,7 +222,6 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
             </g>
         </g>
 
-
         <!-- Vecteur 2-8 gras -->
         <g id="vecteur_2-8_gras">
             <path class="gras" d="M  0.964808    -0.180927    -0.622788    -0.758765" />
@@ -224,7 +233,6 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
             <path class="gras" d="M  -0.637788    -0.737688    -0.36202    0.826268" />
             <use xlink:href="#fleche_8-5_gras" />
         </g>
-
 
         <!-- Cercle -->
         <g id="cercle">
@@ -276,7 +284,6 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
             <use xlink:href="#aile_1-2" />
         </g>
 
-
         <!-- Centre -->
         <g id="centre">
             <g id="arc_centre">
@@ -327,7 +334,8 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
             <path class="txt_centre_guide" id="guide_3" transform="rotate(-60) scale(1.15)"
                 d="M -0.867763 -1.03416 A 1.35 1.35 0 1  0.867763 -1.03416" />
             <text>
-                <textPath class="txt_centre" xlink:href="#guide_3" text-anchor="middle" startOffset="50%">Centre émotionnel
+                <textPath class="txt_centre" xlink:href="#guide_3" text-anchor="middle" startOffset="50%">Centre
+                    émotionnel
                 </textPath>
             </text>
         </g>
@@ -366,7 +374,6 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
             </g>
         </g>
 
-
         <!-- Croix centrale -->
         <g id="croix_centrale" class="helper">
             <path d="M -0.1, 0    0.1, 0 z" />
@@ -394,7 +401,6 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
             <use xlink:href="#triangle_gras" />
         </g>
 
-
         <!-- Triangle 4-9-5 gras -->
         <g id="triangle_4-9-5_gras" class="gras dashed">
             <path d="M 0.34202,0.939693  0,-1  -0.34202,0.939693" />
@@ -410,18 +416,17 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
             <use xlink:href="#triangle_4-9-5_gras" />
         </g>
 
-
         <!--
-1     0.642788,    -0.766044
-2     0.984808,    -0.173648
-3     0.866025,     0.5
-4     0.34202 ,     0.939693
-5    -0.34202 ,     0.939693
-6    -0.866025,     0.5
-7    -0.984808,    -0.173648
-8    -0.642788,    -0.766044
-9     0       ,    -1
--->
+        1     0.642788,    -0.766044
+        2     0.984808,    -0.173648
+        3     0.866025,     0.5
+        4     0.34202 ,     0.939693
+        5    -0.34202 ,     0.939693
+        6    -0.866025,     0.5
+        7    -0.984808,    -0.173648
+        8    -0.642788,    -0.766044
+        9     0       ,    -1
+        -->
 
         <!-- Hexagone -->
         <g id="hexagone">
@@ -429,18 +434,17 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
                 d="M 0.984808,-0.173648 0.34202,0.939693 0.642788,-0.766044 -0.984808,-0.173648 -0.34202,0.939693 -0.642788,-0.766044 z" />
         </g>
 
-        <!-- Hexagone sans 2-8 et 8-5-->
+        <!-- Hexagone sans 2-8 et 8-5 -->
         <g id="hexagone_sans_2-8_et_8-5">
             <path
                 d="M  0.984808,-0.173648   0.34202,0.939693    0.642788,-0.766044     -0.984808,-0.173648    -0.34202,0.939693" />
         </g>
 
-        <!-- Hexagone sans 1-4 et 1-7-->
+        <!-- Hexagone sans 1-4 et 1-7 -->
         <g id="hexagone_sans_1-4_et_1-7">
             <path d="M  -0.984808,    -0.173648 -0.34202 ,     0.939693
             -0.642788,    -0.766044 0.984808,    -0.173648 0.34202 ,     0.939693" />
         </g>
-
 
         <!-- Chiffres ennéatypes -->
         <g id="enneatypes">
@@ -473,7 +477,6 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
             </text>
         </g>
 
-
         <!-- Textes fierté -->
         <g id="textes_fierte">
             <text transform="translate( 0.55, 0.0 )" id="fierte_2">
@@ -492,7 +495,6 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
                 <tspan x="-0.739206" y="-0.880951">Je suis fort</tspan>
                 <tspan x="-0.739206" dy="0.2">Je suis juste</tspan>
             </text>
-
             <text transform="translate( 0, 0.06 )" x="-1.132529" y="-0.199695" id="fierte_7">
                 <tspan></tspan>
             </text>
@@ -509,7 +511,6 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
                 <tspan></tspan>
             </text>
         </g>
-
 
         <!-- Figure 1 -->
         <g id="figure_1">
@@ -530,7 +531,6 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
             </g>
         </g>
 
-
         <!-- Figure 2 -->
         <g id="figure_2">
             <g>
@@ -546,7 +546,6 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
                 <use xlink:href="#enneatypes" />
             </g>
         </g>
-
 
         <!-- Figure 3 -->
         <g id="figure_3">
@@ -564,7 +563,6 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
             </g>
         </g>
 
-
         <!-- Figure 4 -->
         <g id="figure_4">
             <g>
@@ -581,7 +579,6 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
             </g>
         </g>
 
-
         <!-- Figure 5 -->
         <g id="figure_5">
             <g>
@@ -592,12 +589,10 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
             </g>
         </g>
 
-
         <!-- Figure 6 -->
         <g id="figure_6">
             <text>Figure pas encore implémentée</text>
         </g>
-
 
         <!-- Figure 7 -->
         <g id="figure_7">
@@ -608,7 +603,6 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
         <g id="figure_8">
             <text>Figure pas encore implémentée</text>
         </g>
-
 
         <!-- Figure 9 -->
         <g id="figure_9">
@@ -637,7 +631,6 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
                 <use xlink:href="#triangle_2-5-8_gras" />
             </g>
         </g>
-
 
         <!-- Figure 10 -->
         <g id="figure_10">
@@ -705,7 +698,6 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
             </g>
         </g>
 
-
         <!-- Figure 13 -->
         <g id="figure_13">
             <g>
@@ -725,7 +717,6 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
             </g>
         </g>
 
-
         <!-- Figure 14 -->
         <g id="figure_14">
             <g>
@@ -739,21 +730,9 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
             </g>
         </g>
 
-
-
-
-
-        <g id="figure_ajeter">
-            <g>
-                <use xlink:href="#enneatypes" />
-            </g>
-        </g>
-
     </defs>
 
-
     <g id="final_display">
-
         <!-- Figures -->
         <g id="figure_1_disp">
             <use xlink:href="#figure_1" />
@@ -767,7 +746,6 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
         <g>
             <use xlink:href="#centre_emotionnel" />
         </g>
-
     </g>
 
     <script type="text/javascript">
@@ -775,13 +753,13 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
         "use strict";
 
             /**
-            * Start
-            */
+             * Start
+             */
             window.addEventListener("load", main, false);
 
             /**
-            * Main
-            */
+             * Main
+             */
             function main() {
                 $_GET = GET_param();
                 if (!isGETDefined($_GET)) {
@@ -791,8 +769,8 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
             }
 
             /**
-            * GET_param
-            */
+             * GET_param
+             */
             function GET_param() {
                 var $_GET = {};
                 var args = location.search.substr(1).split(/&/);
@@ -822,8 +800,8 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
             }
 
             /**
-            * displayFigures
-            */
+             * displayFigures
+             */
             function displayFigures($_GET) {
                 var fig = document.getElementById("final_display").childNodes;
                 for (var i = 0; i < fig.length; i++) {
@@ -841,8 +819,8 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
             }
 
             /**
-            * isGETDefined
-            */
+             * isGETDefined
+             */
             function isGETDefined($_GET) {
                 try {
                     var nbGET = $_GET["show"].length;
@@ -852,7 +830,6 @@ http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html
                 }
                 return true;
             }
-
         ]]>
     </script>
 
