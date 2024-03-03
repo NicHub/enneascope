@@ -303,7 +303,7 @@
                 <use xlink:href="#centre" />
             </g>
             <!-- <g><text transform="rotate(0) translate( 0 -1.45 )">Centre instinctif</text></g> -->
-            <path class="txt_centre_guide" id="guide_1" transform="rotate(0) scale(1.06)"
+            <path class="txt_centre_guide" id="guide_1" transform="rotate(0) scale(1.09)"
                 d="M -0.867763 -1.03416 A 1.35 1.35 0 0 1 0.867763 -1.03416" />
             <text>
                 <textPath class="txt_centre" xlink:href="#guide_1" text-anchor="middle" startOffset="50%">Centre
@@ -317,7 +317,7 @@
                 <use xlink:href="#centre" />
             </g>
             <!-- <g><text transform="rotate(60) translate( 0 1.55 )">Centre mental</text></g> -->
-            <path class="txt_centre_guide" id="guide_2" transform="rotate(60) scale(1.15)"
+            <path class="txt_centre_guide" id="guide_2" transform="rotate(60) scale(1.19)"
                 d="M -0.867763 -1.03416 A 1.35 1.35 0 1  0.867763 -1.03416" />
             <text>
                 <textPath class="txt_centre" xlink:href="#guide_2" text-anchor="middle" startOffset="50%">Centre mental
@@ -331,7 +331,7 @@
                 <use xlink:href="#centre" />
             </g>
             <!-- <g><text transform="rotate(300) translate( 0 1.55 )">Centre émotionnel </text></g> -->
-            <path class="txt_centre_guide" id="guide_3" transform="rotate(-60) scale(1.15)"
+            <path class="txt_centre_guide" id="guide_3" transform="rotate(-60) scale(1.19)"
                 d="M -0.867763 -1.03416 A 1.35 1.35 0 1  0.867763 -1.03416" />
             <text>
                 <textPath class="txt_centre" xlink:href="#guide_3" text-anchor="middle" startOffset="50%">Centre
