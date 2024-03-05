@@ -55,15 +55,19 @@
 
         circle,
         path {
+            /* Le cercle est en fait un donut. Ceci garantit que le rayon intérieur est connu.*/
             /* vector-effect: non-scaling-stroke; */
-            /* non-scaling-stroke is not understood the same in FF and Prince*/
-            stroke: black;
-            fill: none;
+            /* non-scaling-stroke is not understood the same in FF and Prince */
+            stroke: rgba(0, 0, 0, 1);
             stroke-width: 0.01px;
             stroke-linecap: round;
             stroke-linejoin: round;
             stroke-opacity: 1;
             display: inline;
+        }
+
+        path {
+            fill: none;
         }
 
         .dashed {
@@ -80,6 +84,11 @@
             stroke-width: 0.05px;
         }
 
+        .gras_moyen,
+        .gras_moyen * {
+            stroke-width: 0.02px;
+        }
+
         text {
             font-size: 0.014rem;
             font-style: normal;
@@ -91,7 +100,7 @@
             fill: black;
             fill-opacity: 1;
             stroke: none;
-            font-family: Cochin, Georgia, serif;
+            font-family: "Bodoni Moda", Cochin, Georgia, monospace;
             /* dominant-baseline: central; */
             /* dominant-baseline doesn’t work in Safari */
         }
@@ -235,8 +244,13 @@
         </g>
 
         <!-- Cercle -->
+        <!-- Le cercle est en fait un donut. Ceci garantit que le rayon intérieur est connu. -->
         <g id="cercle">
-            <circle cx="0" cy="0" r="1" />
+            <circle cx="0" cy="0" r="10" mask="url(#rmvCir)" />
+            <mask id="rmvCir">
+                <circle cx="0" cy="0" r="1.02" style="stroke-width: 0; fill:rgba(255, 255, 255, 1)" />
+                <circle cx="0" cy="0" r="1"  style="stroke-width: 0; fill:rgba(0, 0, 0, 1)" />
+            </mask>
         </g>
 
         <!-- Aile 1-2 -->
@@ -386,8 +400,17 @@
             <path d="M 0,-1 -0.866025,0.5 0.866025,0.5 z" />
         </g>
 
+        <!-- Triangle moyennement gras -->
+
+        <g id="triangle_moyennement_gras" class="gras_moyen" transform="scale(1,-1)" >
+            <path d="M0.08,0.8614 L0.866,-0.5 " />
+            <path d="M0,1 L-0.786,-0.3614 " />
+            <path d="M-0.866,-0.5 L0.706,-0.5 " />
+        </g>
+
+
         <!-- Triangle gras -->
-        <g id="triangle_gras" transform="scale( 0.98 )" class="gras">
+        <g id="triangle_gras" class="gras">
             <path d="M 0,-1 -0.866025,0.5 0.866025,0.5 z" />
         </g>
 
@@ -521,7 +544,7 @@
                 <use xlink:href="#cercle" />
             </g>
             <g>
-                <use xlink:href="#triangle" />
+                <use xlink:href="#triangle_moyennement_gras" />
             </g>
             <g>
                 <use xlink:href="#hexagone" />
