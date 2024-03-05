@@ -15,11 +15,17 @@
 
         @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 
+        .footnote {
+            /* TODO: afficher les footnotes. */
+            display: none;
+        }
+
         body {
             font-family: "Bodoni Moda", monospace;
             font-size: 1.20rem;
             font-variant-numeric: lining-nums;
             margin: 100px 0 100px;
+            background-color: hsl(0, 20%, 95%);
         }
 
         h1 {
@@ -69,6 +75,32 @@
 
         img {
             min-width: 100%;
+        }
+
+        @media print {
+            @page {
+                size: A4;
+            }
+            body {
+                background-color: #FFF;
+                margin: 0;
+                padding: 0;
+                widows: 2;
+                orphans: 2;
+            }
+            td, tr {
+                margin: 0;
+                padding: 0 0.5em 0 0;
+            }
+            svg {
+                margin-top:2cm;
+            }
+            .p0 {
+                page-break-before: always;
+            }
+            form {
+                display: none;
+            }
         }
 
         @media (min-width: 767.98px) {
@@ -126,8 +158,10 @@
         #content-wrapper {
             min-height: 100%;
             box-sizing: border-box;
+            /*
             margin-bottom: -100px;
             padding-bottom: 200px;
+            */
             max-width: 1000px;
             margin-left: auto;
             margin-right: auto;
@@ -145,6 +179,11 @@
         footer a {
             color: #546E7A;
         }
+
+        input[type="checkbox"] {
+            accent-color: #8cd2ed;
+        }
+
     </style>
 </head>
 

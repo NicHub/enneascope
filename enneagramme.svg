@@ -25,8 +25,9 @@
 
 
     <style type="text/css">
+
         svg {
-            background-color: white;
+            background-color: transparent;
         }
 
         .hide {
@@ -55,11 +56,11 @@
 
         circle,
         path {
-            /* Le cercle est en fait un donut. Ceci garantit que le rayon intérieur est connu.*/
+            /* Le cercle est en fait un donut. Ceci garantit que le rayon intérieur est connu. */
             /* vector-effect: non-scaling-stroke; */
             /* non-scaling-stroke is not understood the same in FF and Prince */
             stroke: rgba(0, 0, 0, 1);
-            stroke-width: 0.01px;
+            stroke-width: 0.007px;
             stroke-linecap: round;
             stroke-linejoin: round;
             stroke-opacity: 1;
@@ -100,7 +101,7 @@
             fill: black;
             fill-opacity: 1;
             stroke: none;
-            font-family: "Bodoni Moda", Cochin, Georgia, monospace;
+            font-family: "Bodoni Moda", serif;
             /* dominant-baseline: central; */
             /* dominant-baseline doesn’t work in Safari */
         }
