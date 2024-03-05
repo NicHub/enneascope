@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="centered_polygonal_number_svg" version="1.1" viewBox="-5 -5 10 10"
+    style="background-color: rgba(255, 255, 255, 0);">
+
+    <title>Centered polygonal number</title>
+    <desc>Centered polygonal number</desc>
+
+    <style type="text/css">
+        circle,
+        path {
+            fill: none;
+            stroke-width: 0.2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .l1 {
+            fill: hsl(0, 80%, 80%);
+            stroke: hsl(0, 80%, 70%);
+        }
+
+        .l0 {
+            fill: hsl(150, 65%, 67%);
+            stroke: hsl(150, 65%, 57%);
+        }
+
+        @media(prefers-color-scheme: dark) {
+            .l0 {
+                fill: hsl(0, 80%, 80%);
+                stroke: hsl(0, 80%, 70%);
+            }
+
+            .l1 {
+                fill: hsl(150, 65%, 67%);
+                stroke: hsl(150, 65%, 57%);
+            }
+        }
+    </style>
+
+    <g id="svg_container" transform="scale(1)">
+        <circle id="c0" class="l0" cx=" 0.000" cy=" 0.000" r="0.8"></circle>
+
+        <circle id="c1" class="l1" cx="+2.571" cy="-3.064" r="0.8"></circle>
+        <circle id="c7" class="l1" cx="-3.939" cy="-0.695" r="0.8"></circle>
+        <circle id="c5" class="l1" cx="-1.368" cy="+3.759" r="0.8"></circle>
+        <circle id="c8" class="l1" cx="-2.571" cy="-3.064" r="0.8"></circle>
+        <circle id="c2" class="l1" cx="+3.939" cy="-0.695" r="0.8"></circle>
+        <circle id="c4" class="l1" cx="+1.368" cy="+3.759" r="0.8"></circle>
+
+        <circle id="c6" class="l1" cx="-3.464" cy="+2.000" r="0.8"></circle>
+        <circle id="c9" class="l1" cx="+0.000" cy="-4.000" r="0.8"></circle>
+        <circle id="c3" class="l1" cx="+3.464" cy="+2.000" r="0.8"></circle>
+        <path class="l0" d="
+        M
+        -3.464,+2.000
+        +0.000,-4.000
+        +3.464,+2.000
+        z"
+        />
+
+        <!--
+        <path class="l1" d="
+        M
+            +2.571,-3.064
+            -3.939,-0.695
+            -1.368,+3.759
+            -2.571,-3.064
+            +3.939,-0.695
+            +1.368,+3.759
+        z"
+        />
+-->
+
+    </g>
+
+</svg>
