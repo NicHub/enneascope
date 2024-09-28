@@ -25,7 +25,6 @@
 
 
     <style type="text/css">
-
         svg {
             background-color: transparent;
         }
@@ -117,6 +116,10 @@
         }
 
         .txt_centre_guide {
+            visibility: hidden;
+        }
+
+        .hidden {
             visibility: hidden;
         }
 
@@ -250,7 +253,7 @@
             <circle cx="0" cy="0" r="10" mask="url(#rmvCir)" />
             <mask id="rmvCir">
                 <circle cx="0" cy="0" r="1.02" style="stroke-width: 0; fill:rgba(255, 255, 255, 1)" />
-                <circle cx="0" cy="0" r="1"  style="stroke-width: 0; fill:rgba(0, 0, 0, 1)" />
+                <circle cx="0" cy="0" r="1" style="stroke-width: 0; fill:rgba(0, 0, 0, 1)" />
             </mask>
         </g>
 
@@ -299,27 +302,25 @@
             <use xlink:href="#aile_1-2" />
         </g>
 
-        <!-- Centre -->
-        <g id="centre">
-            <g id="arc_centre">
-                <path d="M -0.867763 -1.03416 A 1.35 1.35 0 0 1 0.867763 -1.03416" />
-            </g>
-            <g id="fleche_centre_gauche" transform="translate(-0.867763 -1.03416 ) rotate(144)">
-                <use xlink:href="#fleche" />
-            </g>
-            <g id="fleche_centre_droite" transform="translate( 0.867763 -1.03416 ) rotate(36)">
-                <use xlink:href="#fleche" />
-            </g>
+        <!-- Flèches des centres -->
+        <g id="fleche_centre_gauche" transform="translate(-0.867763 -1.03416 ) rotate(144)">
+            <use xlink:href="#fleche" />
+        </g>
+        <g id="fleche_centre_droite" transform="translate( 0.867763 -1.03416 ) rotate(36)">
+            <use xlink:href="#fleche" />
         </g>
 
         <!-- Centre instinctif -->
         <g id="centre_instinctif">
-            <g>
-                <use xlink:href="#centre" />
+            <g transform="rotate(0)">
+                <use xlink:href="#fleche_centre_gauche" />
+                <use xlink:href="#fleche_centre_droite" />
             </g>
-            <!-- <g><text transform="rotate(0) translate( 0 -1.45 )">Centre instinctif</text></g> -->
-            <path class="txt_centre_guide" id="guide_1" transform="rotate(0) scale(1.09)"
-                d="M -0.867763 -1.03416 A 1.35 1.35 0 0 1 0.867763 -1.03416" />
+            <g id="arc_centre">
+                <path d="M-0.8678,-1.0342 A1.35,1.35 0 0,1 0.8678,-1.0342" />
+            </g>
+            <path class="hidden" id="guide_1" transform="scale(1.09)"
+                d="M-0.8678,-1.0342 A1.35,1.35 0 0,1 0.8678,-1.0342" />
             <text>
                 <textPath class="txt_centre" xlink:href="#guide_1" text-anchor="middle" startOffset="50%">Centre
                     instinctif</textPath>
@@ -328,30 +329,35 @@
 
         <!-- Centre mental -->
         <g id="centre_mental">
-            <g transform="rotate(240)">
-                <use xlink:href="#centre" />
+            <g transform="rotate(-120)">
+                <use xlink:href="#fleche_centre_gauche" />
+                <use xlink:href="#fleche_centre_droite" />
             </g>
-            <!-- <g><text transform="rotate(60) translate( 0 1.55 )">Centre mental</text></g> -->
-            <path class="txt_centre_guide" id="guide_2" transform="rotate(60) scale(1.19)"
-                d="M -0.867763 -1.03416 A 1.35 1.35 0 1  0.867763 -1.03416" />
+            <g id="arc_centre">
+                <path d="M-1.3295,-0.2344 A1.35,1.35 0 0,0 -0.4617,1.2686" />
+            </g>
+            <path class="hidden" id="guide_2" transform="scale(1.19)"
+                d="M-1.3295,-0.2344 A1.35,1.35 0 0,0 -0.4617,1.2686" />
             <text>
-                <textPath class="txt_centre" xlink:href="#guide_2" text-anchor="middle" startOffset="50%">Centre mental
-                </textPath>
+                <textPath class="txt_centre" xlink:href="#guide_2" text-anchor="middle" startOffset="50%">Centre
+                    mental</textPath>
             </text>
         </g>
 
         <!-- Centre émotionnel -->
         <g id="centre_emotionnel">
             <g transform="rotate(120)">
-                <use xlink:href="#centre" />
+                <use xlink:href="#fleche_centre_gauche" />
+                <use xlink:href="#fleche_centre_droite" />
             </g>
-            <!-- <g><text transform="rotate(300) translate( 0 1.55 )">Centre émotionnel </text></g> -->
-            <path class="txt_centre_guide" id="guide_3" transform="rotate(-60) scale(1.19)"
-                d="M -0.867763 -1.03416 A 1.35 1.35 0 1  0.867763 -1.03416" />
+            <g id="arc_centre">
+                <path d="M0.4617,1.2686 A1.35,1.35 0 0,0 1.3295,-0.2344" />
+            </g>
+            <path class="hidden" id="guide_3" transform="scale(1.19)"
+                d="M0.4617,1.2686 A1.35,1.35 0 0,0 1.3295,-0.2344" />
             <text>
                 <textPath class="txt_centre" xlink:href="#guide_3" text-anchor="middle" startOffset="50%">Centre
-                    émotionnel
-                </textPath>
+                    émotionnel</textPath>
             </text>
         </g>
 
@@ -403,7 +409,7 @@
 
         <!-- Triangle moyennement gras -->
 
-        <g id="triangle_moyennement_gras" class="gras_moyen" transform="scale(1,-1)" >
+        <g id="triangle_moyennement_gras" class="gras_moyen" transform="scale(1,-1)">
             <path d="M0.08,0.8614 L0.866,-0.5 " />
             <path d="M0,1 L-0.786,-0.3614 " />
             <path d="M-0.866,-0.5 L0.706,-0.5 " />
