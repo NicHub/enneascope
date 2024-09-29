@@ -29,16 +29,12 @@
             background-color: transparent;
         }
 
-        .hide {
+        .display_none {
             display: none;
         }
 
         .red {
             stroke: red !important;
-        }
-
-        .helper {
-            display: none;
         }
 
         /*
@@ -112,15 +108,15 @@
         }
 
         .txt_centre {
-            /* font-size: 0.015rem; */
-        }
-
-        .txt_centre_guide {
-            visibility: hidden;
+            font-size: 0.015rem;
         }
 
         .hidden {
             visibility: hidden;
+        }
+
+        .helper {
+            display: none;
         }
 
         .helper * {
@@ -777,90 +773,5 @@
             <use xlink:href="#centre_emotionnel" />
         </g>
     </g>
-
-    <script type="text/javascript">
-        <![CDATA[
-        "use strict";
-
-            /**
-             * Start
-             */
-            window.addEventListener("load", main, false);
-
-            /**
-             * Main
-             */
-            function main() {
-                $_GET = GET_param();
-                if (!isGETDefined($_GET)) {
-                    return;
-                }
-                displayFigures($_GET);
-            }
-
-            /**
-             * GET_param
-             */
-            function GET_param() {
-                var $_GET = {};
-                var args = location.search.substr(1).split(/&/);
-
-                for (var i = 0; i < args.length; ++i) {
-                    var tmp = args[i].split(/=/);
-                    if (tmp[0] != "") {
-                        $_GET[decodeURIComponent(tmp[0])] = decodeURIComponent(
-                            tmp.slice(1).join("").replace("+", " ")
-                        );
-                    }
-                }
-
-                if (!isGETDefined($_GET)) {
-                    return;
-                }
-
-                $_GET["show"] = $_GET["show"].split(/,/);
-                var nbGET = $_GET["show"].length;
-                for (var i = 0; i < nbGET; ++i) {
-                    $_GET["show"][i] = parseInt($_GET["show"][i]);
-                }
-                console.log("$_GET[ 'show' ] = ", $_GET["show"]);
-                console.log("nbGET = ", nbGET);
-
-                return $_GET;
-            }
-
-            /**
-             * displayFigures
-             */
-            function displayFigures($_GET) {
-                var fig = document.getElementById("final_display").childNodes;
-                for (var i = 0; i < fig.length; i++) {
-                    try {
-                        fig[i].style.display = "none";
-                    } catch (err) {}
-                }
-
-                var nbGET = $_GET["show"].length;
-                for (var i = 0; i < nbGET; i++) {
-                    document.getElementById(
-                        "figure_" + $_GET["show"][i] + "_disp"
-                    ).style.display = "inline";
-                }
-            }
-
-            /**
-             * isGETDefined
-             */
-            function isGETDefined($_GET) {
-                try {
-                    var nbGET = $_GET["show"].length;
-                } catch (err) {
-                    console.log("No GET parameters - exit");
-                    return false;
-                }
-                return true;
-            }
-        ]]>
-    </script>
 
 </svg>
